@@ -152,6 +152,14 @@
     cursor: pointer;
 }
 
+#sitemap-modal .border{
+    width: 1210px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: 42vh;
+}
+
 #sitemap-modal .sitemap > ul{
     display: flex;
     text-align: center;
@@ -162,6 +170,7 @@
 }
 
 #sitemap-modal .sitemap > ul > li > a{
+    width: 160px;
     color: #000;
     font-size: 38px;
     font-weight: 500;
@@ -177,6 +186,10 @@
     font-size: 26px;
     font-weight: 400;
     display: block;
+}
+
+#sitemap-modal .sitemap .depth2 li a:hover{
+    color: #1269CD;
 }
 
 #sitemap-modal .sitemap .depth2 li:not(:last-child){
