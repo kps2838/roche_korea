@@ -5,55 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한국 로슈</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/pc.css" media="screen and (min-width : 768px)">
     <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width : 767px)">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
 <body>
-    <header>
-        <h3 class="logo"><a href="./index.html"><img src="./images/logo.png" alt="로고"></a></h3>
-        <div id="gnb">
-            <ul>
-                <li><a href="#">회사소개</a>
-                    <ul class="depth2">
-                        <li><a href="#">기업소개</a><span>|</span></li>
-                        <li><a href="#">연혁</a></li>
-                    </ul></li>
-                <li><a href="#">연구개발</a>
-                    <ul class="depth2">
-                        <li><a href="#">연구개발</a><span>|</span></li>
-                        <li><a href="#">임상연구</a></li>
-                    </ul></li>
-                <li><a href="#">제품정보</a>
-                    <ul class="depth2">
-                        <li><a href="#">제품검색</a><span>|</span></li>
-                        <li><a href="#">제품소식</a></li>
-                    </ul></li>
-                <li><a href="#">채용정보</a>
-                    <ul class="depth2">
-                        <li><a href="#">채용안내</a><span>|</span></li>
-                        <li><a href="#">복지제도</a></li>
-                    </ul></li>
-                <li><a href="#">PR</a>
-                    <ul class="depth2">
-                        <li><a href="#">공지사항</a><span>|</span></li>
-                        <li><a href="#">보도자료</a><span>|</span></li>
-                        <li><a href="#">사회공헌</a></li>
-                    </ul></li>
-                <li><a href="#">고객지원</a>
-                    <ul class="depth2">
-                        <li><a href="#">고객문의</a><span>|</span></li>
-                        <li><a href="#">오시는 길</a></li>
-                    </ul></li>
-            </ul>
-            <div class="depth2-box"></div>
+    <header id="main-header">
+        <div class="container">
+            <h3 class="logo"><a href="./index.html"><img src="./images/logo.png" alt="로고"></a></h3>
+            <div id="gnb">
+                <ul>
+                    <li><a href="#">회사소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">기업소개</a><span>|</span></li>
+                            <li><a href="#">연혁</a></li>
+                        </ul></li>
+                    <li><a href="#">연구개발</a>
+                        <ul class="depth2">
+                            <li><a href="#">연구개발</a><span>|</span></li>
+                            <li><a href="#">임상연구</a></li>
+                        </ul></li>
+                    <li><a href="#">제품정보</a>
+                        <ul class="depth2">
+                            <li><a href="#">제품검색</a><span>|</span></li>
+                            <li><a href="#">제품소식</a></li>
+                        </ul></li>
+                    <li><a href="#">채용정보</a>
+                        <ul class="depth2">
+                            <li><a href="#">채용안내</a><span>|</span></li>
+                            <li><a href="#">복지제도</a></li>
+                        </ul></li>
+                    <li><a href="#">PR</a>
+                        <ul class="depth2">
+                            <li><a href="#">공지사항</a><span>|</span></li>
+                            <li><a href="#">보도자료</a><span>|</span></li>
+                            <li><a href="#">사회공헌</a></li>
+                        </ul></li>
+                    <li><a href="#">고객지원</a>
+                        <ul class="depth2">
+                            <li><a href="#">고객문의</a><span>|</span></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            <button id="site-map" class="pc-only"><img src="./images/sitemap-btn.svg" alt="사이트맵"></button>
         </div>
-        <button id="site-map" class="pc-only"><img src="./images/sitemap-btn.svg" alt="사이트맵"></button>
+        <div class="depth2-box"></div>
     </header>
 
     <div id="sitemap-modal">
@@ -151,20 +155,251 @@
                 </div>
             </a>
         </div>
-
     </div>
 
     <main>
         <section id="products">
-            <h3>Products</h3>
-            <div class="slider">
-
+            <h3 class="title">Products</h3>
+            <button class="arrow left"><img src="./images/left-arrow.svg" alt=""></button>
+            <button class="arrow right"><img src="./images/right-arrow.svg" alt=""></button>
+            <div class="container">
+                <div class="product-list">
+                    <div class="list-box1">
+                        <div class="product-box">
+                            <img src="./images/product01.jpg" alt="">
+                            <a href="#" class="text-box">
+                                <p>전문의약품</p>
+                                <div class="border"></div>
+                                <h3>타미플루</h3>
+                                <p>항바이러스제</p>
+                            </a>
+                        </div>
+                        <div class="product-box">
+                            <img src="./images/product01.jpg" alt="">
+                            <a href="#" class="text-box">
+                                <p>전문의약품</p>
+                                <div class="border"></div>
+                                <h3>타미플루</h3>
+                                <p>항바이러스제</p>
+                            </a>
+                        </div>
+                        <div class="product-box">
+                        <img src="./images/product01.jpg" alt="">
+                        <a href="#" class="text-box">
+                            <p>전문의약품</p>
+                            <div class="border"></div>
+                            <h3>타미플루</h3>
+                            <p>항바이러스제</p>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="list-box2">
+                        <div class="product-box">
+                            <img src="./images/product02.jpg" alt="">
+                            <a href="#" class="text-box">
+                                <p>전문의약품</p>
+                                <div class="border"></div>
+                                <h3>타미플루</h3>
+                                <p>항바이러스제</p>
+                            </a>
+                        </div>
+                        <div class="product-box">
+                            <img src="./images/product01.jpg" alt="">
+                            <a href="#" class="text-box">
+                                <p>전문의약품</p>
+                                <div class="border"></div>
+                                <h3>타미플루</h3>
+                                <p>항바이러스제</p>
+                            </a>
+                        </div>
+                        <div class="product-box">
+                        <img src="./images/product01.jpg" alt="">
+                        <a href="#" class="text-box">
+                            <p>전문의약품</p>
+                            <div class="border"></div>
+                            <h3>타미플루</h3>
+                            <p>항바이러스제</p>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="list-box3">
+                        <div class="product-box">
+                            <img src="./images/product03.jpg" alt="">
+                            <a href="#" class="text-box">
+                                <p>전문의약품</p>
+                                <div class="border"></div>
+                                <h3>타미플루</h3>
+                                <p>항바이러스제</p>
+                            </a>
+                        </div>
+                        <div class="product-box">
+                            <img src="./images/product01.jpg" alt="">
+                            <a href="#" class="text-box">
+                                <p>전문의약품</p>
+                                <div class="border"></div>
+                                <h3>타미플루</h3>
+                                <p>항바이러스제</p>
+                            </a>
+                        </div>
+                        <div class="product-box">
+                        <img src="./images/product01.jpg" alt="">
+                        <a href="#" class="text-box">
+                            <p>전문의약품</p>
+                            <div class="border"></div>
+                            <h3>타미플루</h3>
+                            <p>항바이러스제</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section id="content1">
+            <article id="news">
+                <h3 class="title">News & Notice</h3>
+                <div class="info-box">
+                    <div class="tab">
+                        <button class="on">공지사항</button>
+                        <button>제품소식</button>
+                        <button>보도자료</button>
+                        <a href="#">더보기+</a>
+                    </div>
+                    <div class="info on notice">
+                        <div class="text">
+                            <a href="#">한국로슈, 암 및 희귀 난치성 질환 환자와 함께하는 이벤트 주최</a>
+                            <p>2022-03-11</p>
+                        </div>
+                        <div class="text">
+                            <a href="#">한국로슈, 암 및 희귀 난치성 질환 환자와 함께하는 이벤트 주최</a>
+                            <p>2022-03-11</p>
+                        </div>
+                        <div class="text">
+                            <a href="#">한국로슈, 암 및 희귀 난치성 질환 환자와 함께하는 이벤트 주최</a>
+                            <p>2022-03-11</p>
+                        </div>
+                        <div class="text">
+                            <a href="#">한국로슈, 암 및 희귀 난치성 질환 환자와 함께하는 이벤트 주최</a>
+                            <p>2022-03-11</p>
+                        </div>
+                        <div class="text">
+                            <a href="#">한국로슈, 암 및 희귀 난치성 질환 환자와 함께하는 이벤트 주최</a>
+                            <p>2022-03-11</p>
+                        </div>
+                    </div>
+                    <div class="info product-news">
+                        <div class="text">
+                            <a href="#">캐싸일라주 100밀리그램, 캐싸일라주 160밀리그램 (트라스...</a>
+                            <p>2022-02-03</p>
+                        </div>
+                        <div class="text">
+                            <a href="#">캐싸일라주 100밀리그램, 캐싸일라주 160밀리그램 (트라스...</a>
+                            <p>2022-02-03</p>
+                        </div>
+                        <div class="text">
+                            <a href="#">캐싸일라주 100밀리그램, 캐싸일라주 160밀리그램 (트라스...</a>
+                            <p>2022-02-03</p>
+                        </div>
+                        <div class="text">
+                            <a href="#">캐싸일라주 100밀리그램, 캐싸일라주 160밀리그램 (트라스...</a>
+                            <p>2022-02-03</p>
+                        </div>
+                        <div class="text">
+                            <a href="#">캐싸일라주 100밀리그램, 캐싸일라주 160밀리그램 (트라스...</a>
+                            <p>2022-02-03</p>
+                        </div>
+                    </div>
+                    <div class="info news">
+                        <div class="text">
+                            <a href="#">한국로슈, ‘2018 대한민국 일하기 좋은 100대 기업’ 선정</a>
+                            <p>2018-11-08</p>
+                        </div>
+                        <div class="text">
+                            <a href="#">한국로슈, ‘2018 대한민국 일하기 좋은 100대 기업’ 선정</a>
+                            <p>2018-11-08</p>
+                        </div>
+                        <div class="text">
+                            <a href="#">한국로슈, ‘2018 대한민국 일하기 좋은 100대 기업’ 선정</a>
+                            <p>2018-11-08</p>
+                        </div>
+                        <div class="text">
+                            <a href="#">한국로슈, ‘2018 대한민국 일하기 좋은 100대 기업’ 선정</a>
+                            <p>2018-11-08</p>
+                        </div>
+                        <div class="text">
+                            <a href="#">한국로슈, ‘2018 대한민국 일하기 좋은 100대 기업’ 선정</a>
+                            <p>2018-11-08</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="rnd">
+                <h3 class="title">R&D</h3>
+                <div class="video">
+                    <iframe width="569" height="351" src="https://www.youtube.com/embed/h6TH1pQkiyU?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+
+        <section id="content2">
+            <article class="research">
+                <h3 data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="600">끊임없는 혁신,
+                    <br>세계 최고의 R&D 중심기업 로슈
+                </h3>
+                <button class="btn" onclick = "location.href = '#'">
+                    <h4>연구개발</h4>
+                    <img src="./images/content-arrow.svg" alt="바로가기">
+                </button>
+            </article>
+            <article class="contribution">
+                <h3 data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="600">건강하고 행복한 내일을 위해 
+                    <br>지속가능경영을 실천하고 있습니다.
+                </h3>
+                <button class="btn" onclick = "location.href = '#'">
+                    <h4>사회공헌</h4>
+                    <img src="./images/content-arrow.svg" alt="바로가기">
+                </button>
+            </article>
+
         </section>
     </main>
 
+    <footer id="main-footer">
+        <div class="ft-top">
+            <ul class="ft-menu">
+                <li><a href="#"><strong>개인정보처리방침</strong></a><span>|</span></li>
+                <li><a href="#">법적고지</a><span>|</span></li>
+                <li><a href="#">오시는 길</a></li>
+            </ul>
+            <button id="family-site">Family Site <img src="./images/more-btn.svg" alt="패밀리사이트 열어보기"></button>
+            <ul class="family-site-list">
+                <li><a href="#">로슈글로벌</a></li>
+                <li><a href="#">한국로슈진단</a></li>
+            </ul>
+        </div>
+        <div class="ft-bottom">
+            <img src="./images/ft-logo.png" alt="footer 로고">
+            <div class="title">
+                <p>서울특별시 서초구 서초대로 411, (서초대로411) GTTower(East) 빌딩 17층 <span>|</span>  Tel&nbsp;&nbsp;+82 2 - 3451 - 3600</p>
+                <p>This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.</p>
+            </div>
+            <div class="sns">
+                <ul>
+                    <li><a href="https://twitter.com/roche" target="_blank"><img src="./images/twitter.svg" alt="트위터"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCH_ZBgtt6-8-VA52pao0SSA" target="_blank"><img src="./images/youtube.svg" alt="유튜브"></a></li>
+                    <li><a href="https://www.facebook.com/roche/" target="_blank"><img src="./images/facebook.svg" alt="페이스북"></a></li>
+                </ul>
+            </div>
+            <button onclick = "location.href = '#'"><img src="./images/up-arrow.svg" alt="위로가기"> TOP</button>
 
+        </div>
+    </footer>
 
 <script src="js/swiper.js"></script>
+<script> AOS.init(); </script>
 </body>
 </html>
