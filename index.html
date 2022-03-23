@@ -14,56 +14,57 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/slide.js"></script>
     <script src="./js/main.js"></script>
 </head>
 <body>
     <header id="main-header">
         <div class="container">
             <h3 class="logo"><a href="./index.html"><img src="./images/logo.png" alt="로고"></a></h3>
+            <button id="mobile-menu" class="mobile-only"><img src="./images/mobile-menu.svg" alt=""></button>
             <div id="gnb">
                 <ul>
                     <li><a href="#">회사소개</a>
-                        <ul class="depth2">
+                        <ul class="depth2 pc-only">
                             <li><a href="#">기업소개</a><span>|</span></li>
                             <li><a href="#">연혁</a></li>
                         </ul></li>
                     <li><a href="#">연구개발</a>
-                        <ul class="depth2">
+                        <ul class="depth2 pc-only">
                             <li><a href="#">연구개발</a><span>|</span></li>
                             <li><a href="#">임상연구</a></li>
                         </ul></li>
                     <li><a href="#">제품정보</a>
-                        <ul class="depth2">
+                        <ul class="depth2 pc-only">
                             <li><a href="#">제품검색</a><span>|</span></li>
                             <li><a href="#">제품소식</a></li>
                         </ul></li>
                     <li><a href="#">채용정보</a>
-                        <ul class="depth2">
+                        <ul class="depth2 pc-only">
                             <li><a href="#">채용안내</a><span>|</span></li>
                             <li><a href="#">복지제도</a></li>
                         </ul></li>
                     <li><a href="#">PR</a>
-                        <ul class="depth2">
+                        <ul class="depth2 pc-only">
                             <li><a href="#">공지사항</a><span>|</span></li>
                             <li><a href="#">보도자료</a><span>|</span></li>
                             <li><a href="#">사회공헌</a></li>
                         </ul></li>
-                    <li><a href="#">고객지원</a>
-                        <ul class="depth2">
+                    <li><a href="./location.html">고객지원</a>
+                        <ul class="depth2 pc-only">
                             <li><a href="#">고객문의</a><span>|</span></li>
-                            <li><a href="#">오시는 길</a></li>
+                            <li><a href="./location.html">오시는 길</a></li>
                         </ul></li>
                 </ul>
             </div>
             <button id="site-map" class="pc-only"><img src="./images/sitemap-btn.svg" alt="사이트맵"></button>
         </div>
-        <div class="depth2-box"></div>
+        <div class="depth2-box pc-only"></div>
     </header>
 
-    <div id="sitemap-modal">
+    <div id="sitemap-modal" class="pc-only">
         <h3 class="logo"><img src="./images/logo.png" alt="로고"></h3>
         <button class="close"><img src="./images/close.svg" alt="닫기버튼"></button>
-        <div class="border"></div>
         <div class="sitemap">
             <ul>
                 <li><a href="#">회사소개</a>
@@ -138,118 +139,114 @@
                     <button type="submit" class="search-btn"><img src="./images/search-btn.svg" alt="검색"></button>
                 </form>
             </div>
-            <a href="#" class="about">
-                <img src="./images/about-icon.svg" alt="로슈소개">
-                <div class="text-box">
-                    <h4>로슈소개</h4>
-                    <p>로슈는 글로벌 1위의 믿을 수 있는 
-                        <br>제약회사입니다.</p>
-                </div>
-            </a>
-            <a href="#" class="contact">
-                <img src="./images/contact-icon.svg" alt="고객의 소리">
-                <div class="text-box">
-                    <h4>고객의 소리</h4>
-                    <p>고객 여러분의 목소리를 귀담아 
-                        <br>듣겠습니다. </p>
-                </div>
-            </a>
+            <div class="container">
+                <a href="#" class="about">
+                    <img src="./images/about-icon.svg" alt="로슈소개">
+                    <div class="text-box">
+                        <h4>로슈소개</h4>
+                        <p>로슈는 글로벌 1위의 믿을 수 있는 
+                            <br>제약회사입니다.</p>
+                    </div>
+                </a>
+                <a href="#" class="contact">
+                    <img src="./images/contact-icon.svg" alt="고객의 소리">
+                    <div class="text-box">
+                        <h4>고객의 소리</h4>
+                        <p>고객 여러분의 목소리를 귀담아 
+                            <br>듣겠습니다. </p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
-    <main>
+    <main> 
         <section id="products">
             <h3 class="title">Products</h3>
             <button class="arrow left"><img src="./images/left-arrow.svg" alt=""></button>
             <button class="arrow right"><img src="./images/right-arrow.svg" alt=""></button>
             <div class="container">
                 <div class="product-list">
-                    <div class="list-box1">
-                        <div class="product-box">
+                    <div class="product-box">
                             <img src="./images/product01.jpg" alt="">
                             <a href="#" class="text-box">
                                 <p>전문의약품</p>
                                 <div class="border"></div>
-                                <h3>타미플루</h3>
-                                <p>항바이러스제</p>
+                                <h3>가싸이바®주</h3>
+                                <p>항악성종양제</p>
                             </a>
-                        </div>
-                        <div class="product-box">
-                            <img src="./images/product01.jpg" alt="">
-                            <a href="#" class="text-box">
-                                <p>전문의약품</p>
-                                <div class="border"></div>
-                                <h3>타미플루</h3>
-                                <p>항바이러스제</p>
-                            </a>
-                        </div>
-                        <div class="product-box">
-                        <img src="./images/product01.jpg" alt="">
-                        <a href="#" class="text-box">
-                            <p>전문의약품</p>
-                            <div class="border"></div>
-                            <h3>타미플루</h3>
-                            <p>항바이러스제</p>
-                        </a>
-                        </div>
                     </div>
-                    <div class="list-box2">
-                        <div class="product-box">
+                    <div class="product-box">
                             <img src="./images/product02.jpg" alt="">
                             <a href="#" class="text-box">
                                 <p>전문의약품</p>
                                 <div class="border"></div>
-                                <h3>타미플루</h3>
-                                <p>항바이러스제</p>
+                                <h3>맙테라®주</h3>
+                                <p>항악성종양제</p>
                             </a>
-                        </div>
-                        <div class="product-box">
-                            <img src="./images/product01.jpg" alt="">
-                            <a href="#" class="text-box">
-                                <p>전문의약품</p>
-                                <div class="border"></div>
-                                <h3>타미플루</h3>
-                                <p>항바이러스제</p>
-                            </a>
-                        </div>
-                        <div class="product-box">
-                        <img src="./images/product01.jpg" alt="">
-                        <a href="#" class="text-box">
-                            <p>전문의약품</p>
-                            <div class="border"></div>
-                            <h3>타미플루</h3>
-                            <p>항바이러스제</p>
-                        </a>
-                        </div>
                     </div>
-                    <div class="list-box3">
-                        <div class="product-box">
-                            <img src="./images/product03.jpg" alt="">
-                            <a href="#" class="text-box">
-                                <p>전문의약품</p>
-                                <div class="border"></div>
-                                <h3>타미플루</h3>
-                                <p>항바이러스제</p>
-                            </a>
-                        </div>
-                        <div class="product-box">
-                            <img src="./images/product01.jpg" alt="">
-                            <a href="#" class="text-box">
-                                <p>전문의약품</p>
-                                <div class="border"></div>
-                                <h3>타미플루</h3>
-                                <p>항바이러스제</p>
-                            </a>
-                        </div>
-                        <div class="product-box">
-                        <img src="./images/product01.jpg" alt="">
+                    <div class="product-box">
+                        <img src="./images/product03.jpg" alt="">
                         <a href="#" class="text-box">
                             <p>전문의약품</p>
                             <div class="border"></div>
-                            <h3>타미플루</h3>
-                            <p>항바이러스제</p>
+                            <h3>맙테라®피하주사</h3>
+                            <p>항악성종양제</p>
                         </a>
-                        </div>
+                    </div>
+                    <div class="product-box">
+                        <img src="./images/product04.jpg" alt="">
+                        <a href="#" class="text-box">
+                            <p>전문의약품</p>
+                            <div class="border"></div>
+                            <h3>아바스틴®주</h3>
+                            <p>항악성종양제</p>
+                        </a>
+                    </div>
+                    <div class="product-box">
+                        <img src="./images/product05.jpg" alt="">
+                        <a href="#" class="text-box">
+                            <p>전문의약품</p>
+                            <div class="border"></div>
+                            <h3>알레센자®캡슐</h3>
+                            <p>항악성종양제</p>
+                        </a>
+                    </div>
+                    <div class="product-box">
+                        <img src="./images/product06.jpg" alt="">
+                        <a href="#" class="text-box">
+                            <p>전문의약품</p>
+                            <div class="border"></div>
+                            <h3>젤로다®정</h3>
+                            <p>항악성종양제</p>
+                        </a>
+                    </div>
+                     <div class="product-box">
+                        <img src="./images/product07.jpg" alt="">
+                        <a href="#" class="text-box">
+                            <p>전문의약품</p>
+                            <div class="border"></div>
+                            <h3>젤보라프®정</h3>
+                            <p>항악성종양제</p>
+                        </a>
+                    </div>
+                    <div class="product-box">
+                        <img src="./images/product08.jpg" alt="">
+                        <a href="#" class="text-box">
+                            <p>전문의약품</p>
+                            <div class="border"></div>
+                            <h3>캐싸일라®주</h3>
+                            <p>항악성종양제</p>
+                        </a>
+                    </div>
+                    <div class="product-box">
+                        <img src="./images/product09.jpg" alt="">
+                        <a href="#" class="text-box">
+                            <p>전문의약품</p>
+                            <div class="border"></div>
+                            <h3>타쎄바®정</h3>
+                            <p>항악성종양제</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -260,9 +257,11 @@
                 <h3 class="title">News & Notice</h3>
                 <div class="info-box">
                     <div class="tab">
-                        <button class="on">공지사항</button>
-                        <button>제품소식</button>
-                        <button>보도자료</button>
+                        <div class="tab-btn">
+                            <button class="on">공지사항</button>
+                            <button>제품소식</button>
+                            <button>보도자료</button>
+                        </div>
                         <a href="#">더보기+</a>
                     </div>
                     <div class="info on notice">
@@ -369,23 +368,23 @@
     </main>
 
     <footer id="main-footer">
-        <div class="ft-top">
+        <div class="ft-top pc-only">
             <ul class="ft-menu">
                 <li><a href="#"><strong>개인정보처리방침</strong></a><span>|</span></li>
                 <li><a href="#">법적고지</a><span>|</span></li>
-                <li><a href="#">오시는 길</a></li>
+                <li><a href="./location.html">오시는 길</a></li>
             </ul>
             <button id="family-site">Family Site <img src="./images/more-btn.svg" alt="패밀리사이트 열어보기"></button>
             <ul class="family-site-list">
-                <li><a href="#">로슈글로벌</a></li>
-                <li><a href="#">한국로슈진단</a></li>
+                <li><a href="https://www.roche.com/" target="_blank">로슈글로벌</a></li>
+                <li><a href="http://www.roche-diagnostics.co.kr/Pages/default.aspx" target="_blank">한국로슈진단</a></li>
             </ul>
         </div>
         <div class="ft-bottom">
             <img src="./images/ft-logo.png" alt="footer 로고">
-            <div class="title">
-                <p>서울특별시 서초구 서초대로 411, (서초대로411) GTTower(East) 빌딩 17층 <span>|</span>  Tel&nbsp;&nbsp;+82 2 - 3451 - 3600</p>
-                <p>This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.</p>
+            <div class="text">
+                <p>서울특별시 서초구 서초대로 411, (서초대로411) GTTower(East) 빌딩 17층 <span>|</span>Tel&nbsp;&nbsp;+82 2 - 3451 - 3600</p>
+                <p class="pc-only">This website contains information on products which is targeted to a wide range of audiences and could contain product details or information otherwise not accessible or valid in your country. Please be aware that we do not take any responsibility for accessing such information which may not comply with any legal process, regulation, registration or usage in the country of your origin.</p>
             </div>
             <div class="sns">
                 <ul>

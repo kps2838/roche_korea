@@ -152,18 +152,11 @@
     cursor: pointer;
 }
 
-#sitemap-modal .border{
-    width: 1210px;
-    height: 2px;
-    background: #333;
-    position: absolute;
-    top: 42vh;
-}
-
 #sitemap-modal .sitemap > ul{
     display: flex;
     text-align: center;
 }
+
 
 #sitemap-modal .sitemap > ul > li:not(:last-child){
     margin-right: 50px;
@@ -178,6 +171,7 @@
     height: 75px;
     line-height: 75px;
     margin-bottom: 40px;
+    border-bottom: 3px solid #333;
 }
 
 
@@ -303,17 +297,22 @@
       cursor: pointer;
   }
 
-  .main-banner .quick-menu .about{
-      width: 345px;
+  .main-banner .quick-menu .container{
+      width: 690px;
       height: 140px;
       margin-left: 123px;
+      display: flex;
+  }
+
+  .main-banner .quick-menu .about{
+      width: 345px;
       display: flex;
       align-items: center;
       justify-content: left;
       color: #fff;
   }
 
-  .main-banner .quick-menu a:not(:first-child) > img{
+  .main-banner .quick-menu .container a > img{
       width: 40px;
       margin-right: 25px;
   }
@@ -330,7 +329,9 @@
 }
 
 .main-banner .quick-menu .contact{
+    width: 345px;
     display: flex;
+    align-items: center;
     justify-content: left;
     color: #fff;
 }
@@ -372,10 +373,14 @@ section > h3{
 
 #products .container{
     width: 1211px;
+    height: 500px;
     overflow: hidden;
+    position: relative;
 }
 
 #products .product-list{
+    position: absolute;
+    left: 0;
     width: calc(1211px*3);
     display: flex;
     margin-left: calc(-1211px*0);
@@ -469,6 +474,10 @@ section > h3{
 #news .tab{
     display: flex;
     align-items: center;
+}
+
+#news .tab-btn{
+    display: flex;
 }
 
 #news .tab button{
@@ -702,18 +711,18 @@ section > h3{
     margin-right: 36px;
 }
 
-#main-footer .ft-bottom .title{
+#main-footer .ft-bottom .text{
     width: 661px;
     color: #fff;
     font-size: 12px;
     text-align: justify;
 }
 
-#main-footer .ft-bottom .title p:first-child{
+#main-footer .ft-bottom .text p:first-child{
     font-size: 14px;
 }
 
-#main-footer .ft-bottom .title p:first-child > span{
+#main-footer .ft-bottom .text p:first-child > span{
     font-size: 12px;
     margin-right: 1em;
     margin-left: 1em;

@@ -1,0 +1,603 @@
+.mobile-only{
+    display: none;
+}
+
+
+/* header(메뉴바 부분 */
+
+#main-header{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.25);
+}
+
+#main-header > .container{
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#main-header > .container > .logo{
+    position: absolute;
+    left: 25px;
+    top: 22px;
+}
+
+#gnb > ul {
+    display: flex;
+    position: absolute;
+    top: 22px;
+    left: 381px;
+}
+
+#gnb > ul > li{
+    width: 94px;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+}
+
+#gnb > ul > li > a{
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    height: 60px;
+}
+
+#gnb > ul > li:not(:last-child){
+    margin-right: 50px;
+}
+
+#gnb > ul > li > a{
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#gnb > ul > li > a.this{
+    color: #1269CD;
+}
+
+
+#gnb > ul > li > .depth2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 65px;
+    top: 60px;
+    z-index: 10;
+    color: #fff;
+    display: none;
+    text-align: center;
+}
+
+#gnb > ul > li > .depth2.on{
+    display: flex;
+    min-width: 400px;
+}
+
+#gnb > ul > li > .depth2 > li > a{
+    color: #fff;
+}
+
+#gnb > ul > li > .depth2 > li > a:hover{
+    color: #FFE816;
+}
+
+#gnb > ul > li > .depth2 > li > span{
+    margin: 0 50px;
+}
+
+#main-header .depth2-box{
+    width: 100vw;
+    margin: 0 auto;
+    background: rgba(18, 105, 205, 0.8);
+    position: absolute;
+    height: 0;
+    top: 80px;
+    z-index: 9;
+    transition: all 0.3s;
+}
+
+#main-header .depth2-box.on{
+    height: 65px;
+    opacity: 1;
+}
+
+
+#site-map{
+    position: absolute;
+    top: 29.33px;
+    right: 25px;
+    background: transparent;
+    border: none;
+}
+
+#site-map:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* 사이트맵 */
+#sitemap-modal{
+    background: rgba(255, 255, 255, 0.95);;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#sitemap-modal.on{
+    display: flex;
+}
+
+#sitemap-modal .logo{
+    position: absolute;
+    left: 25px;
+    top: 26px;
+}
+
+#sitemap-modal .close{
+    position: absolute;
+    right: 26.29px;
+    top: 31.29px;
+    border: none;
+    background: transparent;
+}
+
+#sitemap-modal .close:hover{
+    cursor: pointer;
+}
+
+#sitemap-modal .sitemap > ul{
+    display: flex;
+    text-align: center;
+}
+
+
+#sitemap-modal .sitemap > ul > li:not(:last-child){
+    margin-right: 50px;
+}
+
+#sitemap-modal .sitemap > ul > li > a{
+    width: 160px;
+    color: #000;
+    font-size: 38px;
+    font-weight: 500;
+    display: block;
+    height: 75px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #333;
+}
+
+
+#sitemap-modal .sitemap .depth2 li a{
+    color: #000;
+    font-size: 26px;
+    font-weight: 400;
+    display: block;
+}
+
+#sitemap-modal .sitemap .depth2 li a:hover{
+    color: #1269CD;
+}
+
+#sitemap-modal .sitemap .depth2 li:not(:last-child){
+    margin-bottom: 50px;
+}
+
+
+
+/* 서브 메뉴 */
+
+#sub-visual{
+    width: 100%;
+    height: 370px;
+    background-image: url(../images/location-visual.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#sub-visual .title{
+    width: 1440px;
+    margin: 0 auto;
+    height: 370px;
+    color: #fff;
+    font-size: 22px;
+    padding-top: 113px;
+    padding-left: 120px;
+}
+
+#sub-visual .title > h3{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+
+
+/* 브레드크럼 */
+
+#breadcrumb{
+    margin-top: -60px;
+    width: 100%;
+    height: 60px;
+    background: rgba(18, 105, 205, 0.7);
+}
+
+#breadcrumb .sub-menu{
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 120px;
+}
+
+
+#breadcrumb .sub-menu > ul{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: start;
+}
+
+#breadcrumb .sub-menu > ul > li{
+    display: flex;
+    align-items: center;
+}
+
+
+#breadcrumb .sub-menu > ul > li:hover{
+    cursor: pointer;
+}
+
+#breadcrumb .sub-menu > ul > li:first-child > a{
+    width: 67px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#breadcrumb .sub-menu > ul > li:not(:first-child){
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    font-size: 18px;
+}
+
+#breadcrumb .border{
+    margin-right: 40px;
+    width: 2px;
+    height: 42px;
+    background: #fff;
+}
+
+#breadcrumb .sub-menu > ul > li:not(:first-child) > img{
+    margin-left: 30px;
+}
+
+#breadcrumb .sub-menu > ul > li > ul{
+    position: absolute;
+    top: 60px;
+}
+
+#breadcrumb .sub-menu > ul > li > ul > li{
+    width: 200px;
+    height: 60px;
+    background: #1269CD;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    line-height: 60px;
+    padding-left: 40px;
+}
+
+#breadcrumb .sub-menu > ul > li > ul{
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+#breadcrumb .sub-menu > ul > li > ul.depth1.on{
+    height: 300px;
+    opacity: 1;
+}
+
+#breadcrumb .sub-menu > ul > li > ul.depth2.on{
+    height: 100%;
+    opacity: 1;
+}
+
+#breadcrumb .sub-menu > ul > li > ul > li > a{
+    color: #fff;
+    font-size: 18px;
+}
+
+#breadcrumb > .sub-menu > a{
+    position: absolute;
+    height: 60px;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#breadcrumb .sub-menu > a > .border{
+    margin-right: 20px;
+}
+
+#breadcrumb .sub-menu > a > img{
+    margin-left: 20px;
+}
+
+
+
+/* 오시는 길 본문 */
+
+#location section{
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-left: 120px;
+    margin-bottom: 100px;
+}
+
+#location section .btn{
+    display: flex; 
+}
+
+#location section .map-btn{
+    width: 600px;
+    height: 70px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    background: rgba(18, 105, 205, 0.5);
+}
+
+#location section .map-btn:hover{
+    cursor: pointer;
+}
+
+#location section .map-btn.on{
+    background : #1269CD;
+}
+
+#location .map-box{
+    width: 1200px;
+    height: 567px;
+    margin-top: 70px;
+    border: 1px solid #999;
+    display: flex;
+    display: none;
+}
+
+#location .map-box.on{
+    display: flex;
+}
+
+
+#location .map-box .text-box{
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-right: 1px solid #999;
+}
+
+#location .map-box .text-box h3{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#location .map-box .text-box .border{
+    width: 80px;
+    height: 1px;
+    background: #666;
+    margin-bottom: 20px;
+}
+
+#location .map-box .text-box > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#location .map-box .text-box > div:first-child{
+    margin-bottom: 65px;
+}
+
+#location .map-box .text-box > div > p{
+    display: flex;
+    width: 360px;
+    height: 26px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 18px;
+}
+
+#location .map-box .text-box > div > p > img{
+    margin-right: 9px;
+}
+
+#location .map-box .text-box > .adress > .info{
+    font-size: 12px;
+    text-align: center;
+    width: 400px;
+    margin-bottom: 0;
+}
+
+#location .map-box .text-box > .tel > p{
+    width: 160px;
+    margin-bottom: 0;
+}
+
+#location .map-box.company2 .text-box > .adress > p{
+    display: flex;
+    width: 360px;
+    height: 26px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+
+/* 메인 footer */
+
+#main-footer{
+    margin: 0 auto;
+    width: 100%;
+    height: 199px;
+    background: #072242;
+}
+
+#main-footer .ft-top{
+    width: 1440px;
+    margin: 0 auto;
+    height: 63px;
+    position: relative;
+}
+
+#main-footer .ft-menu{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+#main-footer .ft-menu li > a{
+    color: #fff;
+    font-size: 16px;
+}
+
+#main-footer .ft-menu li > span{
+    margin-right: 30px;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 14px;
+}
+
+#family-site{
+    width: 287px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 19px 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#family-site:hover{
+    cursor: pointer;
+}
+
+#family-site > img{
+    margin-left: 110px;
+}
+
+#main-footer .ft-top .family-site-list{
+    position: absolute;
+    right: 0;
+    top: -129px;
+    display: none;
+}
+
+#main-footer .ft-top .family-site-list.on{
+    display: block;
+}
+
+#main-footer .ft-top .family-site-list li{
+    width: 287px;
+    height: 65px;
+    background: rgba(200, 215, 232, 0.8);
+}
+
+#main-footer .ft-top .family-site-list li a{
+    display: block;
+    width: 287px;
+    height: 65px;
+    padding-left: 20px;
+    padding-top: 21px;
+    color: #000;
+    font-size: 20px;
+}
+
+
+#main-footer .ft-bottom{
+    width: 1440px;
+    margin: 0 auto;
+    height: 136px;
+    border-top: 1px solid #c4c4c4;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+#main-footer .ft-bottom > img{
+    margin-right: 36px;
+}
+
+#main-footer .ft-bottom .text{
+    width: 661px;
+    color: #fff;
+    font-size: 12px;
+    text-align: justify;
+}
+
+#main-footer .ft-bottom .text p:first-child{
+    font-size: 14px;
+}
+
+#main-footer .ft-bottom .text p:first-child > span{
+    font-size: 12px;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+#main-footer .ft-bottom .sns ul{
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+    margin-left: 310px;
+}
+
+#main-footer .ft-bottom > button{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #51647A;
+    color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+#main-footer .ft-bottom > button:hover{
+    cursor: pointer;
+}
+
+#main-footer .ft-bottom > button > img{
+    margin-bottom: 5px;
+}
