@@ -32,6 +32,7 @@ $(function(){
             $('#sitemap-modal').removeClass('on');
         });
 
+
         // familysite
         $('#family-site').click(function(){
             $('#main-footer .ft-top .family-site-list').toggleClass('on');
@@ -133,6 +134,4 @@ $(function(){
         $('#location > section .map-box').eq(1).addClass('on')
     })
 
-
-    
 });
