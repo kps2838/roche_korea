@@ -37,6 +37,22 @@ $(function(){
             $('#main-footer .ft-top .family-site-list').toggleClass('on');
         })
 
+        $('.family-site-list').mouseleave(function(){
+            $(this).removeClass('on');
+        })
+
+        $('.family-site-list > li').hover(function(){
+            $(this).css({
+                'background-color':'rgb(200, 215, 232)',
+                'font-weight':'500'
+            });
+        }, function(){
+            $(this).css({
+            'background-color':'rgba(200, 215, 232, 0.8)',
+            'font-weight':'400'
+            })
+
+        })
 
         // 브래드 크럼
         $('#breadcrumb .sub-menu > ul > li > ul > li').hover(function(){

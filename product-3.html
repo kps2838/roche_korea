@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국로슈</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/product_pc.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="css/product_mobile.css" media="screen and (max-width:767px)">
+    <script src="js/main.js"></script>
+</head>
+<body id="product">
+    <div class="header-component">
+        <script src="./js/header.js"></script>
+    </div>
+    
+    <!-- sub visual -->
+    <div id="sub-visual">
+        <div class="title">
+            <h3>제품정보</h3>
+            <p>한국로슈의 다양한 제품을 확인하실 수 있습니다.</p>
+        </div>
+    </div>
+
+    <div id="breadcrumb">
+        <div class="sub-menu">
+            <ul>
+                <li><a href="./index.html" class="pc-only"><img src="./images/home.svg" alt="홈"></a></li>
+                <li><div class="border pc-only"></div>제품정보<img src="./images/down_arrow.svg" alt="더보기">
+                    <ul class="depth1">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">연구개발</a></li>
+                        <li><a href="#">채용정보</a></li>
+                        <li><a href="#">PR</a></li>
+                        <li><a href="./location.html">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><div class="border"></div>제품검색<img src="./images/down_arrow.svg" alt="더보기">
+                    <ul class="depth2">
+                        <li><a href="#">제품소식</a></li>
+                    </ul></li>
+            </ul>
+            <a href="#" class="pc-only"><div class="border"></div>Contact Us<img src="./images/contact.svg" alt="고객센터"></a>
+        </div>
+    </div>
+    
+
+    <!-- 제품검색 -->
+    <section id="product-contents">
+        <h2>제품검색</h2>
+        <form action="#" id="search-form">
+             <div class="product-search-input-box">
+                <input type="text" name="stext" id="stext" class="product-search-input" placeholder="제품명, 성분명, 효능/효과로 검색 가능합니다.">
+                <input type="submit" value class="submit-btn">
+            </div>
+        </form>
+       <div class="product-category">
+            <ul class="category-menu">
+                <li><a href="#">
+                    <h3>TOTAL</h3>
+                </a></li>
+                <li><a href="./product.html">
+                    <h3>항생제</h3>
+                </a></li>
+                <li><a href="./product-2.html">
+                    <h3>면역/이식치료제</h3>
+                </a></li>
+                <li class="on"><a href="#">
+                    <h3>빈혈치료제</h3>
+                </a></li>
+                <li><a href="./product-4.html">
+                    <h3>항바이러스제</h3>
+                </a></li>
+                <li><a href="./product-5.html">
+                    <h3>중추신경용제</h3>
+                </a></li>
+                <li><a href="./product-6.html">
+                    <h3>기타</h3>
+                </a></li>
+            </ul>
+        </div>
+        <!-- 검색결과 -->
+        <div class="product-info-box box1">
+            <div class="info-box">
+                <a href="#">
+                    <div class="info-img">
+                        <img src="images/category3-1.jpg" alt="미쎄라 프리필드주">
+                    </div>
+                    <p>전문의약품</p>
+                    <div class="line"></div>
+                    <h2>미쎄라®프리필드 주</h2>
+                    <h3>기타의 호르몬제</h3>
+                </a>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <ul>
+                <li class="on">
+                    <a href="#">1</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- footer -->
+    <div class="footer-component">
+        <script src="./js/footer.js"></script>
+    </div>
+</body>
+</html>

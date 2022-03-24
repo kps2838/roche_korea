@@ -18,7 +18,7 @@ function header (){
                     </ul></li>
                 <li><a href="#">제품정보</a>
                     <ul class="depth2">
-                        <li><a href="#">제품검색</a><span>|</span></li>
+                        <li><a href="./product.html">제품검색</a><span>|</span></li>
                         <li><a href="#">제품소식</a></li>
                     </ul></li>
                 <li><a href="#">채용정보</a>
@@ -61,7 +61,7 @@ function header (){
                 </ul></li>
             <li><a href="#">제품정보</a>
                 <ul class="depth2">
-                    <li><a href="#">제품검색</a></li>
+                    <li><a href="./product.html">제품검색</a></li>
                     <li><a href="#">제품소식</a></li>
                 </ul></li>
             <li><a href="#">채용정보</a>
