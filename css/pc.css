@@ -361,6 +361,10 @@ section > h3{
     background: transparent;
 }
 
+#products > .arrow:hover{
+    cursor: pointer;
+}
+
 #products > .arrow.right{
     right: 10.71px;
     top: 50%;

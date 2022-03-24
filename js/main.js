@@ -2,6 +2,13 @@ $(function(){
 
     let w = window.innerWidth;
     console.log(w);
+    $(window).resize(function(){
+        if(w=768) {
+            location.reload()}
+        else if(w=767) {
+            location.reload()}
+    })
+
     if(w >= 768){
         //gnb 메뉴바
         $('#gnb > ul > li').hover(function(){
@@ -13,9 +20,6 @@ $(function(){
             $(this).find('> a').css('color','#000')
             $(this).find('.depth2').removeClass('on')
             $('#main-header .depth2-box').removeClass('on')
-        });
-
-        $('#main-header .depth2-box').mouseleave(function(){
         });
 
 
@@ -33,15 +37,12 @@ $(function(){
             $('#main-footer .ft-top .family-site-list').toggleClass('on');
         })
 
-
-        // 브래드크럼 hover
-
-        $('#breadcrumb .sub-menu > ul > li').hover(function(){
-            $(this).find('ul').addClass('on')
- 
-        },  function(){
-            $(this).find('ul').removeClass('on')
-        });
+        // 브래드 크럼
+        $('#breadcrumb .sub-menu > ul > li > ul > li').hover(function(){
+            $(this).find('a').css('color','#FFE816')
+        }, function(){
+            $(this).find('a').css('color','#ffffff')
+        })
 
 
     } else{
@@ -50,15 +51,7 @@ $(function(){
             $('#gnb').toggleClass('on')
         })
 
-         // 브래드크럼 hover
-
-        $('#breadcrumb .sub-menu > ul > li').click(function(){
-            $(this).find('ul').toggleClass('on')
-            });
-            
-
     }
-
 
 
     //메인 페이지 게시판 탭
@@ -85,7 +78,6 @@ $(function(){
 
 
 
-
     //오시는 길 지도
     
     $('#location > section .btn .map-btn').eq(0).click(function(){
@@ -101,5 +93,9 @@ $(function(){
         $('#location > section .map-box').removeClass('on')
         $('#location > section .map-box').eq(1).addClass('on')
     })
-
+    
+    $('#breadcrumb .sub-menu > ul > li').click(function(){
+        $(this).find('ul').toggleClass('on') 
+    });
+    
 });
