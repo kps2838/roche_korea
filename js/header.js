@@ -6,14 +6,14 @@ function header (){
         <button id="mobile-menu" class="mobile-only"><img src="./images/mobile-menu.svg" alt=""></button>
         <div id="gnb">
             <ul>
-                <li><a href="#">회사소개</a>
+                <li><a href="./company-1.html">회사소개</a>
                     <ul class="depth2">
-                        <li><a href="#">기업소개</a><span>|</span></li>
-                        <li><a href="#">연혁</a></li>
+                        <li><a href="./company-1.html">기업소개</a><span>|</span></li>
+                        <li><a href="./company-2.html">연혁</a></li>
                     </ul></li>
-                <li><a href="#">연구개발</a>
+                <li><a href="./research.html">연구개발</a>
                     <ul class="depth2">
-                        <li><a href="#">연구개발</a><span>|</span></li>
+                        <li><a href="./research.html">연구개발</a><span>|</span></li>
                         <li><a href="#">임상연구</a></li>
                     </ul></li>
                 <li><a href="./product.html">제품정보</a>
@@ -49,14 +49,14 @@ function header (){
     <button class="close"><img src="./images/close.svg" alt="닫기버튼"></button>
     <div class="sitemap">
         <ul>
-            <li><a href="#">회사소개</a>
+            <li><a href="./company-1.html">회사소개</a>
                 <ul class="depth2">
-                    <li><a href="#">기업소개</a></li>
-                    <li><a href="#">연혁</a></li>
+                    <li><a href="./company-1.html">기업소개</a></li>
+                    <li><a href="./company-2.html">연혁</a></li>
                 </ul></li>
-            <li><a href="#">연구개발</a>
+            <li><a href="./research.html">연구개발</a>
                 <ul class="depth2">
-                    <li><a href="#">연구개발</a></li>
+                    <li><a href="./research.html">연구개발</a></li>
                     <li><a href="#">임상연구</a></li>
                 </ul></li>
             <li><a href="./product.html">제품정보</a>
