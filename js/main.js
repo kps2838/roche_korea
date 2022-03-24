@@ -37,12 +37,17 @@ $(function(){
             $('#main-footer .ft-top .family-site-list').toggleClass('on');
         })
 
+
         // 브래드 크럼
         $('#breadcrumb .sub-menu > ul > li > ul > li').hover(function(){
             $(this).find('a').css('color','#FFE816')
         }, function(){
             $(this).find('a').css('color','#ffffff')
         })
+
+        $('#breadcrumb .sub-menu > ul > li > ul').mouseleave(function(){
+            $(this).removeClass('on') 
+        });
 
 
     } else{
@@ -55,7 +60,6 @@ $(function(){
 
 
     //메인 페이지 게시판 탭
-
     $('#news .info-box .tab button').click(function(){
         $('#news .info-box .tab button').removeClass('on')
         $(this).addClass('on')
@@ -77,6 +81,11 @@ $(function(){
     });
 
 
+    // 브레드크럼
+    $('#breadcrumb .sub-menu > ul > li').click(function(){
+        $(this).find('ul').toggleClass('on') 
+    });
+
 
     //오시는 길 지도
     
@@ -93,9 +102,7 @@ $(function(){
         $('#location > section .map-box').removeClass('on')
         $('#location > section .map-box').eq(1).addClass('on')
     })
-    
-    $('#breadcrumb .sub-menu > ul > li').click(function(){
-        $(this).find('ul').toggleClass('on') 
-    });
+
+
     
 });
