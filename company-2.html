@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회사소개</title>
+    <title>한국 로슈</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" href="./css/company_pc.css" media="screen and (min-width : 768px)">
-    <link rel="stylesheet" href="./css/company_mobile.css" media="screen and (max-width : 767px)">
+    <link rel="stylesheet" href="./css/company01_pc.css" media="screen and (min-width : 768px)">
+    <link rel="stylesheet" href="./css/company01_mobile.css" media="screen and (max-width : 767px)">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -18,237 +18,154 @@
     <script src="./js/main.js"></script>
 </head>
 <body>
+
     <div class="header-component">
         <script src="./js/header.js"></script>
     </div>
-
-    <div id="sitemap-modal" class="pc-only">
-        <h3 class="logo"><img src="./images/logo.png" alt="로고"></h3>
-        <button class="close"><img src="./images/close.svg" alt="닫기버튼"></button>
-        <div class="border"></div>
-        <div class="sitemap">
-            <ul>
-                <li><a href="#">회사소개</a>
-                    <ul class="depth2">
-                        <li><a href="#">기업소개</a></li>
-                        <li><a href="#">연혁</a></li>
-                    </ul></li>
-                <li><a href="#">연구개발</a>
-                    <ul class="depth2">
-                        <li><a href="#">연구개발</a></li>
-                        <li><a href="#">임상연구</a></li>
-                    </ul></li>
-                <li><a href="#">제품정보</a>
-                    <ul class="depth2">
-                        <li><a href="#">제품검색</a></li>
-                        <li><a href="#">제품소식</a></li>
-                    </ul></li>
-                <li><a href="#">채용정보</a>
-                    <ul class="depth2">
-                        <li><a href="#">채용안내</a></li>
-                        <li><a href="#">복지제도</a></li>
-                    </ul></li>
-                <li><a href="#">PR</a>
-                    <ul class="depth2">
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">보도자료</a></li>
-                        <li><a href="#">사회공헌</a></li>
-                    </ul></li>
-                <li><a href="#">고객지원</a>
-                    <ul class="depth2">
-                        <li><a href="#">고객문의</a></li>
-                        <li><a href="#">오시는 길</a></li>
-                    </ul></li>
-            </ul>
+    
+    <div id="sub-visual">
+        <div class="title">
+            <h3>연혁</h3>
+            <p>Doing  now what patients need next</p>
         </div>
     </div>
 
-    <!-- 타이틀 -->
-    <main>
-        <section id="title">
-            <img class="pc-only" src="./images/title2.jpg" alt="회사소개">
-            <div class="black"></div>
-            <div class="sub-visual">
-                <div class="title-text">
-                    <h1>연혁</h1>
-                    <p>Doing  now what patients need next</p>
-                </div>
-            </div>
-
-            <!-- breadcrumb -->
-
-            <!-- pc -->
-            <nav id="breadcrumb" class="pc-only">
-                <ul>
-                    <li><a href="#"><img src="./images/icon2.svg" alt="home"></a>
-                    </li>
-                    <span></span>
-
-                <li><a href="#">회사소개</a>
-                    <ul  class="depth3">
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">연구개발</a></li>
-                        <li><a href="#">제품정보</a></li>
+    <div id="breadcrumb">
+        <div class="sub-menu ">
+            <ul>
+                <li><a href="./index.html" class="pc-only"><img src="./images/home.svg" alt="홈"></a></li>
+                <li><div class="border pc-only"></div>회사소개<img src="./images/down_arrow.svg" alt="더보기">
+                    <ul class="depth1">
+                        <li><a href="./research.html">연구개발</a></li>
+                        <li><a href="./product.html">제품정보</a></li>
                         <li><a href="#">채용정보</a></li>
                         <li><a href="#">PR</a></li>
-                        <li><a href="#">고객지원</a></li>
-
-
+                        <li><a href="./location.html">고객지원</a></li>
                     </ul>
-                    <img src="./images/down.svg" alt="breadcrumb-btn">
                 </li>
-                <span></span>
-                <li><a href="#">연혁</a>
-                    <ul class="depth4">
-                        <li><a href="#">기업소개</a></li>
-                        <li><a href="#">연혁</a></li>
-                    </ul>
-                    <img src="./images/down.svg" alt="breadcrumb-btn">
-                </li>
-                <span></span>
-                <li>
-                    <a href="#">CONTACT US</a>
-                    <img src="./images/icon.svg" alt="more">
-                </li>
-                </ul>
-            </nav>
-
-            <!-- mobile -->
-            <nav id="mobile-breadcrumb" class="mobile-only">
-                <ul>
-                    <li><a href="#">회사소개</a>
-                        <ul  class="depth3">
-                            <li><a href="#">회사소개</a></li>
-                            <li><a href="#">연구개발</a></li>
-                            <li><a href="#">제품정보</a></li>
-                            <li><a href="#">채용정보</a></li>
-                            <li><a href="#">PR</a></li>
-                            <li><a href="#">고객지원</a></li>
-                        </ul>
-                        <img src="./images/down.svg" alt="breadcrumb-btn">
-                    </li>
-                    <span></span>
-                    <li><a href="#">연혁</a>
-                        <ul class="depth4">
-                            <li><a href="#">기업소개</a></li>
-                            <li><a href="#">연혁</a></li>
-                        </ul>
-                        <img src="./images/down.svg" alt="breadcrumb-btn">
-                    </li>
-                </ul>
-            </nav>
-        </section>
-
-        <!-- 콘텐츠 -->
-
-        <section id="contents2">
-            <img class="pc-only" src="./images/subpage-contents2.jpg" alt="contents2-title">
-            <img src="./images/mobile-subpage-contents2.jpg" alt="contents2-title" class="mobile-only">
-            <div class="pc-only">
+                <li><div class="border"></div>연혁<img src="./images/down_arrow.svg" alt="더보기">
+                    <ul class="depth2">
+                        <li><a href="./company-1.html">기업소개</a></li>
+                    </ul></li>
+            </ul>
+            <a href="#" class="pc-only"><div class="border"></div>Contact Us<img src="./images/contact.svg" alt="고객센터"></a>
+        </div>
+    </div>
+    
+<main>
+    <section id="contents2">
+        <div class="container">
+            <div class="text">
                 <h1>새로운 도전과 혁신의 신화가 시작되다</h1>
-                <p>세계 1위의 바이오 제약사인 로슈그룹의 프리츠 호프만 라        로슈회장이
+                <p>세계 1위의 바이오 제약사인 로슈그룹의 프리츠 호프만 라로슈 회장이
                 <br>
                 1983년 설립하였으며 국인의 생명 연장과 삶의 질 향상을 위해 노력하고있습니다. </p>
             </div>
-            <!-- movile -->
-            <div class="mobile-only">
-                <h1>새로운 도전과 혁신의<br>신화가 시작되다</h1>
-                <p>세계 1위의 바이오 제약사인 로슈그룹의 프리츠 호프만 라        로슈회장이
-                <br>
-                1983년 설립하였으며 국인의 생명 연장과 삶의 질 향상을 위해 노력하고있습니다. </p>
-            </div>
-        </section>
-        <section id="history" class="pc-only">
-            <div class="move">
-                <h2>1983
-                    <img src="./images/history-icon2.svg" alt="line">
-                    <img src="./images/history-icon.svg" alt="point">
-                </h2>
-                <span></span>
-                <h2>1998
-                    <img src="./images/history-icon2.svg" alt="line">
-                    <img src="./images/history-icon.svg" alt="point">
-                </h2>
-                <span></span>
-                <h2>2013
-                    <img src="./images/history-icon2.svg" alt="line">
-                    <img src="./images/history-icon.svg" alt="point">
-                </h2>
-                <span></span>
-                <h2>2017
-                    <img src="./images/history-icon2.svg" alt="line">
-                    <img src="./images/history-icon.svg" alt="point">
-                </h2>
-                <span></span>
-            </div>
-            <div class="text" data-aos="fade-left"     data-aos-delay="100"
-            data-aos-duration="1000"
-            >
+        </div>
+    </section>
+
+    <section id="history" class="pc-only">
+        <div class="move">
+            <h2>1983
+                <img src="./images/history-icon2.svg" alt="line">
+                <img src="./images/history-icon.svg" alt="point">
+            </h2>
+            <span></span>
+            <h2>1998
+                <img src="./images/history-icon2.svg" alt="line">
+                <img src="./images/history-icon.svg" alt="point">
+            </h2>
+            <span></span>
+            <h2>2013
+                <img src="./images/history-icon2.svg" alt="line">
+                <img src="./images/history-icon.svg" alt="point">
+            </h2>
+            <span></span>
+            <h2>2017
+                <img src="./images/history-icon2.svg" alt="line">
+                <img src="./images/history-icon.svg" alt="point">
+            </h2>
+            <span></span>
+        </div>
+        <div class="text" 
+        data-aos="fade-left"     
+        data-aos-delay="100"
+        data-aos-duration="1000">
+            <p>1983 - ㈜한국로슈 법인 설립</p>
+            <p>1990 - 한국로슈진단㈜ 설립</p>
+        </div>
+        <div class="text" 
+        data-aos="fade-left"
+        data-aos-offset="-50"
+        data-aos-delay="300"
+        data-aos-duration="1000">
+            <p>1998 - 노동부 지정 노사협력 우수기업</p>
+            <p>2012 - 암환우를 위한 사회공헌 활동 ‘힐링 갤러리’ 시작</p>
+        </div>
+        <div class="text" 
+        data-aos="fade-left"
+        data-aos-offset="-50"      
+        data-aos-delay="500"
+        data-aos-duration="1000">
+            <p>2013 - 로슈그룹 – 삼성바이오로직스, 바이오의약품 생산을 위한 장기적 파트너십 체결</p>
+            <p>2014 - 한국 임상 연구 부서, 본사 직속의 글로벌 R&D 조직으로 승격</p>
+        </div>
+        <div class="text" 
+        data-aos="fade-left" 
+        data-aos-offset="-50"
+        data-aos-delay="700"
+        data-aos-duration="1000">
+            <p>2017 - 에이온휴잇 선정 ‘2017 한국 최고의 직장 수상</p>
+            <p>2018 - 힐링 갤러리에서 진화된 환자맞춤형 사회공헌활동 ‘힐링투게더’ 시작</p>
+            <p>2018 - GPTW Institute 선정 ‘2018 대한민국 일하기 좋은 100대 기업’ 선정</p>
+        </div>
+    </section>
+    <!-- mobile -->
+    <div class="mobile-only">
+        <section id="history-map">
+            <h2>1983
+                <img src="./images/history-icon2.svg" alt="line">
+                <img src="./images/history-icon.svg" alt="point">
+            </h2>
+            <div class="text">
                 <p>1983 - ㈜한국로슈 법인 설립</p>
                 <p>1990 - 한국로슈진단㈜ 설립</p>
             </div>
-            <div class="text" data-aos="fade-left"      data-aos-delay="300"
-            data-aos-duration="1000"
-            >
+            <h2>1998
+                <img src="./images/history-icon2.svg" alt="line">
+                <img src="./images/history-icon.svg" alt="point">
+            </h2>
+            <div class="text">
                 <p>1998 - 노동부 지정 노사협력 우수기업</p>
                 <p>2012 - 암환우를 위한 사회공헌 활동 ‘힐링 갤러리’ 시작</p>
             </div>
-            <div class="text" data-aos="fade-left"      data-aos-delay="500"
-            data-aos-duration="1000"
-            >
+            <h2>2013
+                <img src="./images/history-icon2.svg" alt="line">
+                <img src="./images/history-icon.svg" alt="point">
+            </h2>
+            <div class="text">
                 <p>2013 - 로슈그룹 – 삼성바이오로직스, 바이오의약품 생산을 위한 장기적 파트너십 체결</p>
                 <p>2014 - 한국 임상 연구 부서, 본사 직속의 글로벌 R&D 조직으로 승격</p>
             </div>
-            <div class="text" data-aos="fade-left"      data-aos-delay="510"
-            data-aos-duration="1000"
-            >
+            <h2>2017
+                <img src="./images/history-icon2.svg" alt="line">
+                <img src="./images/history-icon.svg" alt="point">
+            </h2>
+            <div class="text">
                 <p>2017 - 에이온휴잇 선정 ‘2017 한국 최고의 직장 수상</p>
                 <p>2018 - 힐링 갤러리에서 진화된 환자맞춤형 사회공헌활동 ‘힐링투게더’ 시작</p>
                 <p>2018 - GPTW Institute 선정 ‘2018 대한민국 일하기 좋은 100대 기업’ 선정</p>
             </div>
         </section>
-        <!-- mobile -->
-        <div class="mobile-only">
-            <section id="history">
-                <h2>1983
-                    <img src="./images/history-icon2.svg" alt="line">
-                    <img src="./images/history-icon.svg" alt="point">
-                </h2>
-                <div class="text">
-                    <p>1983 - ㈜한국로슈 법인 설립</p>
-                    <p>1990 - 한국로슈진단㈜ 설립</p>
-                </div>
-                <h2>1998
-                    <img src="./images/history-icon2.svg" alt="line">
-                    <img src="./images/history-icon.svg" alt="point">
-                </h2>
-                <div class="text">
-                    <p>1998 - 노동부 지정 노사협력 우수기업</p>
-                    <p>2012 - 암환우를 위한 사회공헌 활동 ‘힐링 갤러리’ 시작</p>
-                </div>
-                <h2>2013
-                    <img src="./images/history-icon2.svg" alt="line">
-                    <img src="./images/history-icon.svg" alt="point">
-                </h2>
-                <div class="text">
-                    <p>2013 - 로슈그룹 – 삼성바이오로직스, 바이오의약품 생산을 위한 장기적 파트너십 체결</p>
-                    <p>2014 - 한국 임상 연구 부서, 본사 직속의 글로벌 R&D 조직으로 승격</p>
-                </div>
-                <h2>2017
-                    <img src="./images/history-icon2.svg" alt="line">
-                    <img src="./images/history-icon.svg" alt="point">
-                </h2>
-                <div class="text">
-                    <p>2017 - 에이온휴잇 선정 ‘2017 한국 최고의 직장 수상</p>
-                    <p>2018 - 힐링 갤러리에서 진화된 환자맞춤형 사회공헌활동 ‘힐링투게더’ 시작</p>
-                    <p>2018 - GPTW Institute 선정 ‘2018 대한민국 일하기 좋은 100대 기업’ 선정</p>
-                </div>
-            </section>
-        </div>
-    </main>
+    </div>
 
     <div class="footer-component">
         <script src="./js/footer.js"></script>
     </div>
+
+</main>
+
+
+<script> AOS.init(); </script>
 </body>
 </html>
