@@ -51,13 +51,27 @@ $(function(){
 
 
     } else{
-        // 모바일 menu
+        //모바일 menu
         $('#mobile-menu').click(function(){
             $('#gnb').toggleClass('on')
         })
 
-    }
+        $('#gnb > ul > li').click(function(){
+            $('.depth2').removeClass('on');
+            $(this).find('.depth2').addClass('on');
 
+            $('#gnb > ul > li').children('a').css({
+                'background-color':'#fff',
+                'color':'#000'
+            });
+
+            $(this).children('a').css({
+                'background-color':'#1269CD',
+                'color':'#fff'
+            });
+
+        })
+    }
 
     //메인 페이지 게시판 탭
     $('#news .info-box .tab button').click(function(){
