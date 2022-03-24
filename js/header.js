@@ -16,7 +16,7 @@ function header (){
                         <li><a href="#">연구개발</a><span>|</span></li>
                         <li><a href="#">임상연구</a></li>
                     </ul></li>
-                <li><a href="#">제품정보</a>
+                <li><a href="./product.html">제품정보</a>
                     <ul class="depth2">
                         <li><a href="./product.html">제품검색</a><span>|</span></li>
                         <li><a href="#">제품소식</a></li>
@@ -59,7 +59,7 @@ function header (){
                     <li><a href="#">연구개발</a></li>
                     <li><a href="#">임상연구</a></li>
                 </ul></li>
-            <li><a href="#">제품정보</a>
+            <li><a href="./product.html">제품정보</a>
                 <ul class="depth2">
                     <li><a href="./product.html">제품검색</a></li>
                     <li><a href="#">제품소식</a></li>
@@ -75,7 +75,7 @@ function header (){
                     <li><a href="#">보도자료</a></li>
                     <li><a href="#">사회공헌</a></li>
                 </ul></li>
-            <li><a href="#">고객지원</a>
+            <li><a href="./location.html">고객지원</a>
                 <ul class="depth2">
                     <li><a href="#">고객문의</a></li>
                     <li><a href="./location.html">오시는 길</a></li>
