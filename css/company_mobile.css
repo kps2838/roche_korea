@@ -261,7 +261,7 @@
 }
 
 #contents > .text-box > h1 > span {
-    text-decoration: overline var(--main-color);
+    border-top: 4px solid #1269CD;
 }
 
 #contents > .text-box > p {
@@ -277,8 +277,8 @@
     margin-bottom: 40px;
 }
 
-#contents > .value-box > h1 > span {
-    text-decoration: overline var(--main-color);
+#contents > .value-box  h1 > span{
+    border-top: 4px solid #1269CD;
 }
 
 .value > img {
@@ -317,8 +317,7 @@
     margin-top: 80px;
 }
 
-#glance > h1 {
-    
+#glance > .text-box > h1  {
     color: #fff;
     margin-left: 25px;
     margin-top: 80px;
@@ -329,9 +328,8 @@
     z-index: 2;
 }
 
-#glance > h1 > span {
-    text-decoration: overline var(--main-color);
-    
+#glance > .text-box > h1 > span {
+    border-top: 4px solid #1269CD;
 }
 
 .glance-box {

@@ -263,6 +263,9 @@
 
 #contents3 > .text-box > h3 {
     width: 90px;
+}
+
+#contents3 > .text-box > h3 > span {
     border-top: 4px solid #1269CD;
 }
 

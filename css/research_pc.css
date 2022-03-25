@@ -385,6 +385,9 @@
     font-size: 32px;
     font-weight: 500;
     margin-right: 120px;
+}
+
+#contents3 > .text-box > h3 > span {
     border-top: 4px solid #1269CD;
 }
 
