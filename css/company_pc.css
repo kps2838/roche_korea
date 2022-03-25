@@ -309,7 +309,6 @@
     background: rgba(18, 106, 206, 0.9);
     border-top: 2px solid rgba(255, 255, 255, 0.4);
     line-height: 60px;
-    padding-left: 40px;
 }
 
 #breadcrumb .sub-menu > ul > li > ul > li:hover{
@@ -329,6 +328,7 @@
     opacity: 1;
 }
 
+
 #breadcrumb .sub-menu > ul > li > ul.depth2.on{
     height: 100%;
     opacity: 1;
@@ -337,6 +337,9 @@
 #breadcrumb .sub-menu > ul > li > ul > li > a{
     color: #fff;
     font-size: 18px;
+    display: block;
+    width: 200px;
+    padding-left: 40px;
 }
 
 #breadcrumb > .sub-menu > a{
@@ -379,11 +382,12 @@
 }
 
 #contents > .text-box > h1 {
-    width: 140px;
+    width: 135px;
     height: 60px;
     font-size: 32px;
     font-weight: 500;
     margin-right: 120px;
+    border-top: 4px solid #1269CD;
 }
 
 #contents > .text-box > h1 > span {
@@ -402,7 +406,6 @@
 }
 
 
-
 #contents > .value-box {
     width: 1200px;
     height: 300px;
@@ -411,9 +414,11 @@
 }
 
 #contents > .value-box > h1 {
-    width: 220px;
+    width: 135px;
     font-size: 32px;
     font-weight: 500;
+    border-top: 4px solid #1269CD;
+    margin-right: 100px;
 }
 
 #contents > .value-box > h1 > span {
@@ -463,6 +468,8 @@
 }
 
 #glance .text-box{
+    padding-top: 25px;
+    padding-left: 120px;
     width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -470,11 +477,11 @@
 
 #glance > .text-box > h1 {
     color: #fff;
-    padding-left: 120px;
-    padding-top: 25px;
     font-size: 32px;
     font-weight: 500;
     z-index: 2;
+    border-top: 4px solid #FFF;
+    display: block;
 }
 
 #glance > .text-box > h1 > span {

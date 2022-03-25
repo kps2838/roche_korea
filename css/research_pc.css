@@ -309,7 +309,6 @@
     background: rgba(18, 106, 206, 0.9);
     border-top: 2px solid rgba(255, 255, 255, 0.4);
     line-height: 60px;
-    padding-left: 40px;
 }
 
 #breadcrumb .sub-menu > ul > li > ul > li:hover{
@@ -336,7 +335,11 @@
 #breadcrumb .sub-menu > ul > li > ul > li > a{
     color: #fff;
     font-size: 18px;
+    display: block;
+    width: 200px;
+    padding-left: 40px;
 }
+
 
 #breadcrumb > .sub-menu > a{
     position: absolute;
@@ -384,8 +387,6 @@
     margin-right: 120px;
     border-top: 4px solid #1269CD;
 }
-
-
 
 #contents3 > .text-box > p {
     width: 1000px;

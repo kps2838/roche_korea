@@ -314,7 +314,6 @@
     background: rgba(18, 106, 206, 0.9);
     border-top: 2px solid rgba(255, 255, 255, 0.4);
     line-height: 60px;
-    padding-left: 40px;
 }
 
 #breadcrumb .sub-menu > ul > li > ul > li:hover{
@@ -332,6 +331,12 @@
 #breadcrumb .sub-menu > ul > li > ul.depth1.on{
     height: 300px;
     opacity: 1;
+}
+
+#breadcrumb .sub-menu > ul > li > ul> li > a{
+    display: block;
+    width: 200px;
+    padding-left: 40px;
 }
 
 #breadcrumb .sub-menu > ul > li > ul.depth2.on{

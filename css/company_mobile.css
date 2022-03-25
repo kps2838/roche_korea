@@ -211,7 +211,7 @@
     background: rgba(18, 106, 206, 0.9);
     border-top: 2px solid rgba(255, 255, 255, 0.4);
     line-height: 60px;
-    padding-left: 40px;}
+}
 
 #breadcrumb .sub-menu > ul > li > ul{
     height: 0;
@@ -232,7 +232,9 @@
 
 #breadcrumb .sub-menu > ul > li > ul > li > a{
     color: #fff;
-    font-size: 16px;
+    display: block;
+    font-size: 16px;    
+    padding-left: 40px;
 }
 
 
@@ -245,6 +247,7 @@
     padding-right: 20px;
     display: inline-block;
     position: relative;
+    z-index: -3;
 }
 
 #contents > .text-box {
