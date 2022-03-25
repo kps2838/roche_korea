@@ -1,7 +1,6 @@
 .pc-only{
     display: none;
 }
-
 #main-header{
     width: 100%;
     height: 80px;
@@ -28,6 +27,20 @@
     right: 10px;
 }
 
+#main-header .container .block{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 4;
+    display: none;
+}
+
+#main-header .container .block.on{
+    display: block;
+}
+
 #gnb{
     width: 100%;
     overflow: hidden;
@@ -35,7 +48,7 @@
     flex-direction: column;
     position: absolute;
     top: 80px;
-    z-index: 9;
+    z-index: 5;
     transition: all 0.5s;
     height: 0;
 }
@@ -88,13 +101,11 @@
 
 #gnb > ul > li > .depth2 {
     display: none;
-
 }
 
 #gnb > ul > li > .depth2.on{
     display: block;
 }
-
 
 
 
@@ -139,14 +150,14 @@
   }
   
   .swiper .swiper-slide .title h2 {
-    font-size: 24px;
+    font-size: 36px;
     color: #fff;
     margin-bottom: 0;
     font-weight: 500;
   }
   
   .swiper .swiper-slide .title h2 span {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: normal;
   }
 
@@ -161,7 +172,7 @@
 }
 
 .quick-menu .search{
-    height: 140px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,10 +180,10 @@
     color: #fff;
 }
 
-.quick-menu .search > h4{
+.quick-menu .search > a{
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 16px;
+    display: block;
 }
 
 .quick-menu .search .search-input {
@@ -197,6 +208,7 @@
 .main-banner .quick-menu .container{
     display: flex;
     flex: 1;
+    margin-top: 15px;
 }
 
 .main-banner .quick-menu a{
@@ -514,7 +526,6 @@
 
 
 /* 메인 footer */
-
 #main-footer{
     width: 100%;
     height: 212px;

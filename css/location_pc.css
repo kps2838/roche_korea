@@ -54,11 +54,6 @@
     font-size: 20px;
 }
 
-#gnb > ul > li > a.this{
-    color: #1269CD;
-}
-
-
 #gnb > ul > li > .depth2{
     display: flex;
     align-items: center;
@@ -123,20 +118,27 @@
 
 /* 사이트맵 */
 #sitemap-modal{
-    background: rgba(255, 255, 255, 0.95);;
+    background: rgba(255, 255, 255, 0.95);
     width: 100%;
     height: 100vh;
     z-index: 999;
+    display: none;
     position: fixed;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
 }
 
 #sitemap-modal.on{
+    display: block;
+}
+
+#sitemap-modal .container{
+    width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 #sitemap-modal .logo{
@@ -513,13 +515,81 @@
     border-left: 1px solid #999;
 }
 
+/* 메인 footer */
+
+#main-footer{
+    width: 100%;
+    height: 212px;
+    background: #072242;
+}
+
+#main-footer .ft-bottom{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-footer .ft-bottom > img{
+    margin-bottom: 25px;
+    width: 90px;
+}
+
+#main-footer .ft-bottom .text{
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 350px;
+    line-height: 2em;
+}
+
+#main-footer .ft-bottom .text p:first-child > span{
+    display: none;
+}
+
+#main-footer .ft-bottom .sns ul{
+    display: flex;
+    width: 165px;
+    justify-content: space-between;
+}
+
+#main-footer .ft-bottom .sns ul li a > img{
+    width: 35px;
+}
+
+#main-footer .ft-bottom > button{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #51647A;
+    color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    font-size: 12px;
+}
+
+
+#main-footer .ft-bottom > button > img{
+    margin-bottom: 8px;
+}
+
+
+
 
 /* 메인 footer */
 
 #main-footer{
     margin: 0 auto;
     width: 100%;
-    height: 199px;
+    height: 209px;
     background: #072242;
 }
 
@@ -603,9 +673,10 @@
 #main-footer .ft-bottom{
     width: 1440px;
     margin: 0 auto;
-    height: 136px;
+    height: 146px;
     border-top: 1px solid #c4c4c4;
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding-left: 30px;
 }
@@ -623,6 +694,7 @@
 
 #main-footer .ft-bottom .text p:first-child{
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 #main-footer .ft-bottom .text p:first-child > span{

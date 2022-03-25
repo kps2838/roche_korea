@@ -70,7 +70,8 @@ $(function(){
     } else{
         //모바일 menu
         $('#mobile-menu').click(function(){
-            $('#gnb').toggleClass('on')
+            $('#gnb').toggleClass('on');
+            $('#main-header .container .block').toggleClass('on');
         })
 
         $('#gnb > ul > li').click(function(){

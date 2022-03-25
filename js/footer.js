@@ -27,7 +27,6 @@ function footer(){
             </ul>
         </div>
         <button onclick = "location.href = '#'"><img src="./images/up-arrow.svg" alt="위로가기"> TOP</button>
-
     </div>
 </footer>`
 }
