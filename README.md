@@ -2,12 +2,12 @@
 ## 한국 로슈 브랜딩 사이트
 1. 시안제작: PC, Mobile(반응형)
 2. 1차 업데이트 (22.03.21)
-    - Figma 시안 제작
-    - 리뉴얼 제안서 ppt 제작
+    + Figma 시안 제작
+    + 리뉴얼 제안서 ppt 제작
 
 2. 2차 업데이트 (22.03.25 1pm)
-    - 퍼블리싱 작업
-    - 주요 구현 효과
+    + 퍼블리싱 작업
+    + 주요 구현 효과
         + PC, Mobile 반응형
         + PC sitemap Modal - Javascript
         + PC GNB hover 메뉴바 효과 - CSS, Javascript
