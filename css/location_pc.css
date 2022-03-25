@@ -3,6 +3,7 @@
 }
 
 
+
 /* header(메뉴바 부분 */
 
 #main-header{
@@ -144,7 +145,7 @@
 #sitemap-modal .logo{
     position: absolute;
     left: 25px;
-    top: 26px;
+    top: 22px;
 }
 
 #sitemap-modal .close{
@@ -196,7 +197,6 @@
 #sitemap-modal .sitemap .depth2 li:not(:last-child){
     margin-bottom: 50px;
 }
-
 
 
 /* 서브 메뉴 */
