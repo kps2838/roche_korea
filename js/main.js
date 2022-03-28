@@ -67,6 +67,14 @@ $(function(){
         });
 
 
+        // faq 더보기 버튼
+        $('#faq .container .info-box .title > button').click(function(){
+            // $('#faq .container .info-box').removeClass('on');
+            $(this).parent().parent().toggleClass('on');
+            // $(this).find('img').attr('src', './images/minus.svg');
+        });
+        
+
     } else{
         //모바일 menu
         $('#mobile-menu').click(function(){

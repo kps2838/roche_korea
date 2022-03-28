@@ -22,9 +22,9 @@ function header (){
                         <li><a href="./product.html">제품검색</a><span>|</span></li>
                         <li><a href="#">제품소식</a></li>
                     </ul></li>
-                <li><a href="#">채용정보</a>
+                <li><a href="./hire.html">채용정보</a>
                     <ul class="depth2">
-                        <li><a href="#">채용안내</a><span>|</span></li>
+                        <li><a href="./hire.html">채용안내</a><span>|</span></li>
                         <li><a href="#">복지제도</a></li>
                     </ul></li>
                 <li><a href="#">PR</a>
@@ -66,9 +66,9 @@ function header (){
                         <li><a href="./product.html">제품검색</a></li>
                         <li><a href="#">제품소식</a></li>
                     </ul></li>
-                <li><a href="#">채용정보</a>
+                <li><a href="./hire.html">채용정보</a>
                     <ul class="depth2">
-                        <li><a href="#">채용안내</a></li>
+                        <li><a href="./hire.html">채용안내</a></li>
                         <li><a href="#">복지제도</a></li>
                     </ul></li>
                 <li><a href="#">PR</a>
