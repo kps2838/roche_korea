@@ -27,15 +27,15 @@ function header (){
                         <li><a href="./hire.html">채용안내</a><span>|</span></li>
                         <li><a href="#">복지제도</a></li>
                     </ul></li>
-                <li><a href="#">PR</a>
+                <li><a href="./social.html">PR</a>
                     <ul class="depth2">
                         <li><a href="#">공지사항</a><span>|</span></li>
                         <li><a href="#">보도자료</a><span>|</span></li>
-                        <li><a href="#">사회공헌</a></li>
+                        <li><a href="./social.html">사회공헌</a></li>
                     </ul></li>
-                <li><a href="./location.html">고객지원</a>
+                <li><a href="./contact-1.html">고객지원</a>
                     <ul class="depth2">
-                        <li><a href="#">고객문의</a><span>|</span></li>
+                        <li><a href="./contact-1.html">고객문의</a><span>|</span></li>
                         <li><a href="./location.html">오시는 길</a></li>
                     </ul></li>
             </ul>
@@ -71,15 +71,15 @@ function header (){
                         <li><a href="./hire.html">채용안내</a></li>
                         <li><a href="#">복지제도</a></li>
                     </ul></li>
-                <li><a href="#">PR</a>
+                <li><a href="./social.html">PR</a>
                     <ul class="depth2">
                         <li><a href="#">공지사항</a></li>
                         <li><a href="#">보도자료</a></li>
-                        <li><a href="#">사회공헌</a></li>
+                        <li><a href="./social.html">사회공헌</a></li>
                     </ul></li>
-                <li><a href="./location.html">고객지원</a>
+                <li><a href="./contact-1.html.html">고객지원</a>
                     <ul class="depth2">
-                        <li><a href="#">고객문의</a></li>
+                        <li><a href="./contact-1.html">고객문의</a></li>
                         <li><a href="./location.html">오시는 길</a></li>
                     </ul></li>
             </ul>

@@ -67,12 +67,12 @@ $(function(){
         });
 
 
-        // faq 더보기 버튼
-        $('#faq .container .info-box .title > button').click(function(){
-            // $('#faq .container .info-box').removeClass('on');
-            $(this).parent().parent().toggleClass('on');
-            // $(this).find('img').attr('src', './images/minus.svg');
-        });
+        // 파일업로드
+
+        $("#file").on('change',function(){
+            var fileName = $("#file").val();
+            $(".upload-name").val(fileName);
+          });
         
 
     } else{
@@ -142,5 +142,40 @@ $(function(){
         $('#location > section .map-box').removeClass('on')
         $('#location > section .map-box').eq(1).addClass('on')
     })
+
+
+    // faq 더보기 버튼
+    $('#faq .container .info-box .title > button').click(function(){
+        // $('#faq .container .info-box').removeClass('on');
+        $(this).parent().parent().toggleClass('on');
+        // $(this).find('img').attr('src', './images/minus.svg');
+    });
+
+    $('#faq .container .info-box .title > h4').click(function(){
+        $(this).parent().parent().toggleClass('on');
+    });    
+
+        // 사회공헌 js
+
+        $('#social .button .social-btn').eq(0).click(function(){
+            $('#social .social-btn').removeClass('on')
+            $(this).addClass('on')
+            $('#social .social-box').removeClass('on')
+            $('#social .social-box').eq(0).addClass('on')
+        });
+    
+        $('#social .button .social-btn').eq(1).click(function(){
+            $('#social .social-btn').removeClass('on')
+            $(this).addClass('on')
+            $('#social .social-box').removeClass('on')
+            $('#social .social-box').eq(1).addClass('on')
+        });
+    
+        $('#social .button .social-btn').eq(2).click(function(){
+            $('#social .social-btn').removeClass('on')
+            $(this).addClass('on')
+            $('#social .social-box').removeClass('on')
+            $('#social .social-box').eq(2).addClass('on')
+        });
 
 });

@@ -116,7 +116,7 @@
 #sub-visual{
     width: 100%;
     height: 310px;
-    background-image: url(../images/location-visual.jpg);
+    background-image: url(../images/PR_sub-visual.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -252,139 +252,85 @@
     padding-left: 40px;
 }
 
-
-/* 오시는 길 본문 */
-
-#location section{
+/* 사회공헌 콘텐츠 */
+#social section {
     width: 100%;
     margin-top: 60px;
     margin-bottom: 50px;
 }
 
-#location section .btn{
-    display: flex; 
+#social section .title {
+    font-size: 16px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
 }
 
-#location section .map-btn{
-    width: 50vw;
+#social section .button {
+    display: flex;
+}
+
+#social section .social-btn {
+    width: 33.3vw;
     height: 70px;
     border: none;
-    color: #fff;
     font-size: 16px;
-    background: rgba(7, 34, 66, 0.5);
+    background: rgba(21, 74, 136, 0.5);
+    color: #fff;
 }
 
-#location section .map-btn.on{
-    background : rgb(7, 34, 66);
+#social section .social-btn.on {
+    background: rgb(21, 74, 136);
 }
 
-#location .map-box{
+#social .social-box {
     width: 100%;
-    height: 990px;
-    display: flex;
-    flex-direction: column-reverse;
     display: none;
 }
 
-#location .map-box.on{
-    display: flex;
-}
-
-#location .map-box .text-box{
-    width: 100%;
-    height: 521px;
+#social .social-box.on {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border-right: 1px solid #999;
-    -webkit-animation-name: moving-title;
-    -webkit-animation-duration: 1.5s;
-    animation-name: text-box;
-    animation-duration: 1.5s;
 }
 
-@-webkit-keyframes text-box {
-    from { margin-bottom: -80px;
-            opacity: 0;
-        }
-    to { margin-bottom: 0px;
-        opacity: 100%;
-        }
-}
-@keyframes text-box {
-    from { margin-bottom: -80px;
-        opacity: 0;
-        }
-    to { margin-bottom: 0px;
-        opacity: 100%;
-
-        }
+#social .img-box {
+    width: 100vw;
+    height: 600px;
 }
 
-#location .map-box .text-box h3{
-    font-size: 36px;
-    font-weight: 400;
-    margin-bottom: 20px;
+#social .volunteer1 .img-box {
+    background-image: url(../images/social-mobile-contents1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    object-fit: cover;
+
 }
 
-#location .map-box .text-box .border{
-    width: 80px;
-    height: 1px;
-    background: #666;
-    margin-bottom: 20px;
+#social .volunteer3 .img-box {
+    background-image: url(../images/social-mobile-contents3.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-#location .map-box .text-box > div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#location .map-box .text-box > div:first-child{
-    margin-bottom: 50px;
-}
-
-#location .map-box .text-box > div > p{
-    display: flex;
-    width: 330px;
-    height: 26px;
-    margin-bottom: 40px;
-    text-align: left;
-    font-size: 18px;
-}
-
-#location .map-box .text-box > div > p > img{
-    margin-right: 9px;
-}
-
-#location .map-box .text-box > .adress > .info{
-    font-size: 12px;
-    text-align: center;
-    width: 62%;
-    margin-bottom: 0;
-}
-
-#location .map-box .text-box > .tel > p{
-    width: 160px;
-    margin-bottom: 0;
-}
-
-#location .map-box.company2 .text-box > .adress > p{
-    display: flex;
-    width: 360px;
-    height: 26px;
-    margin-bottom: 40px;
-    text-align: left;
-    font-size: 18px;
-}
-
-#location .map-box .map iframe{
+#social .text-box {
     width: 100%;
-    height: 500px;
-    margin-bottom: 50px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+#social .text-box > h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#social .text-box > p {
+    font-size: 16px;
+    line-height: 30px;
+}
 
 /* 메인 footer */
 

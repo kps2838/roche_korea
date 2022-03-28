@@ -116,6 +116,9 @@
 
 
 
+
+
+
 /* 사이트맵 */
 #sitemap-modal{
     background: rgba(255, 255, 255, 0.95);
@@ -254,13 +257,12 @@
 }
 
 
-
 /* 서브 메뉴 */
 
 #sub-visual{
     width: 100%;
     height: 370px;
-    background-image: url(../images/location-visual.jpg);
+    background-image: url(../images/PR_sub-visual.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -398,7 +400,7 @@
 }
 
 #breadcrumb .sub-menu > ul > li > ul.depth2.on{
-    height: 100%;
+    height: 120px;
     opacity: 1;
 }
 
@@ -427,480 +429,87 @@
     margin-left: 20px;
 }
 
-
-
-
-/* faq 본문 */
-
-section .btn{
-    display: flex; 
+/* 사회공헌 콘텐츠 */
+#social section {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-top: 100px;
+    margin-bottom: 150px;
 }
 
-section .contact-btn{
-    width: 600px;
+#social section .title {
+    font-size: 20px;
+    padding-bottom: 100px;
+}
+
+#social section .button {
+    display: flex;
+}
+
+#social section .social-btn {
+    width: 400px;
     height: 70px;
     border: none;
-    color: #fff;
     font-size: 20px;
     font-weight: 500;
     background: rgba(21, 74, 136, 0.5);
+    color: #fff;
 }
 
-section .contact-btn:hover{
+#social section .social-btn:hover {
     cursor: pointer;
-    background : #154A88;
-
 }
 
-section .contact-btn.this{
-    background : #154A88;
+#social section .social-btn.on {
+    background: rgba(21, 74, 136);
 }
 
-main{
-    margin-top: 100px;
-    padding-top: 180px;
-    width: 1440px;
-    height: 100%;
-    margin: 0 auto;
-    padding-bottom: 120px;
-}
-
-#faq section .container{
-    width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-main > section > .container > h3{
-    font-size: 60px;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 75px;
-    margin-bottom: 60px;
-}
-
-#faq .container .info-box{
+#social .social-box {
     width: 1200px;
-    padding: 22px 15px;
-    display: block;
-    height: 100px;
-    overflow: hidden;
-    border-bottom: 2px solid #71A5E1;
-}
-
-#faq .container .info-box.on{
-    height: 100%;
-}
-
-#faq .container .info-box:nth-child(2){
-    border-top: 4px solid #71A5E1;
-}
-
-#faq .container .info-box:last-child{
-    border-bottom: 4px solid #71A5E1;
-}
-
-
-#faq .container .info-box .title{
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-bottom: 30px;
-}
-
-#faq .container .info-box .title > img:first-child{
-    margin-right: 25px;
-}
-
-#faq .container .info-box .title > h4{
-    font-size: 26px;
-    font-weight: 400;
-    display: inline-block;
-}
-
-#faq .container .info-box .title > h4:hover{
-    cursor: pointer;
-}
-
-#faq .container .info-box .title > button{
-    position: absolute;
-    right: 0;
-    border: none;
-    background: transparent;
-}
-
-#faq .container .info-box .title > button:hover{
-    cursor: pointer;
-}
-
-#faq .container .info-box .title > button > img{
-    height: 36.75px;
-    width: 36.75px;
-}
-
-#faq .container .info-box > .answer{
-    margin-left: 97px;
-    font-size: 16px;
-}
-
-#faq .container .info-box > .answer a {
-    color: #000;
-    font-weight: 500;
-}
-
-#faq .container .info-box > .answer a:hover{
-    text-decoration: underline;
-}
-
-
-/* 1:1 문의 */
-
-#contact-2{
-    width: 1440px;
-    margin: 0 auto;
-}
-
-#contact-2 section h3{
-    font-size: 60px;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 75px;
-    margin-bottom: 60px;
-
-}
-
-#contact-2 section > p{
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-#contact-2 form {
-    margin-top: 40px;
-    width: 974px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#contact-2 form p{
-    text-align: left;
-}
-
-#contact-2 form fieldset{
-    border: none;
-}
-
-#contact-2 form fieldset legend{
-    font-size: 32px;
-    font-weight: 500;
-}
-
-#contact-2 form .agreement{
-    margin-bottom: 100px;
-}
-
-#contact-2 form .agreement > p{
-    font-size: 16px;
-    text-align: left;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-#contact-2 form > .agreement > table {
-    border-collapse: collapse;
-    caption-side: bottom;
-    margin-bottom: 25px;
-    font-size: 16px;
-}
-
-#contact-2 form > .agreement > table td{
-    border: 2px solid #71A5E1;
-    border-collapse: collapse;
-}
-
-#contact-2 form > .agreement > table > caption{
-    font-size: 14px;
-    color: #666;
-    margin-top: 5px;
-}
-
-#contact-2 form > .agreement > table td{
-    padding: 14px 57px 14px 25px;
-}
-
-
-#contact-2 form > .agreement > label{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#contact-2 form > .agreement > label > span{
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-#contact-2 form > .agreement input[type="checkbox"]{
-    width: 24px;
-    height: 24px;
-}
-
-#contact-2 form > .inquiry .container{
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: flex-start;
-    border-bottom: 2px solid #71A5E1;
-}
-
-#contact-2 form > .inquiry .container:nth-child(2){
-    border-top: 4px solid #71A5E1;
-    margin-top: 30px;
-}
-
-#contact-2 form > .inquiry .container > p {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-#contact-2 form > .inquiry label{
-    font-size: 16px;
-    font-weight: 500;
-}
-
-
-#contact-2 form > .inquiry select{
-    width: 200px;
-    height: 40px;
-    border: 1px solid #71A5E1;
-    text-align: center;
-    font-size: 14px;
-}
-
-#contact-2 form > .inquiry input{
-    width: 200px;
-    height: 40px;
-    border: 1px solid #71A5E1;
-    font-size: 14px;
-}
-
-
-#contact-2 form > .inquiry .container > #client{
-    margin-right: 50px;
-    margin-left: 51px;
-}
-
-#contact-2 form > .inquiry .container > #category{
-    margin-left: 51px;
-
-}
-
-#contact-2 form > .inquiry .container #name{
-    margin-left: 84px;
-    margin-right: 50px;
-}
-
-#contact-2 form > .inquiry .container #gender{
-    margin-left: 84px;
-}
-
-#contact-2 form > .inquiry .container #mail{
-    margin-left: 70px;
-    margin-right: 50px;
-}
-
-#contact-2 form > .inquiry .container #phone{
-    margin-left: 63px;
-}
-
-#contact-2 form > .inquiry .container:nth-child(5) p{
-    margin-right: 57px;
-}
-
-#contact-2 form > .inquiry #response1{
-    margin-left: 10px;
-    margin-right: 40px;
-}
-
-#contact-2 form > .inquiry #response2{
-    margin-left: 10px;
-}
-
-#contact-2 form > .inquiry input[type="checkbox"]{
-    width: 20px;
-    height: 20px;
-}
-
-#contact-2 form > .inquiry .container:nth-child(6){
-    flex-wrap: wrap;
-    height: 142px;
-}
-
-
-#contact-2 form > .inquiry .container:nth-child(6) label:first-child input{
-    margin-left: 53px;
-    margin-right: 50px;
-}
-
-#contact-2 form > .inquiry .container:nth-child(6) label:nth-child(2) input{
-    margin-left: 22px;
-}
-
-
-#contact-2 form > .inquiry .container:nth-child(6) > p{
-    font-size: 14px;
-    color: #666;
-}
-
-#contact-2 form > .inquiry .container:nth-child(7){
-    height: 100%;
-    padding: 35px 0;
-}
-
-#contact-2 form > .inquiry .container #text{
-    margin-left: 20px;
-    resize: none;
-    border: 1px solid #71A5E1;
-}
-
-#contact-2 form > .inquiry .container:nth-child(8) input{
-    border: none;
-}
-
-
-.filebox input[type="file"] {
-    position: absolute;
-    width: 0;
-    height: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-  }
-  
-  .filebox{
-      display: flex;
-      height: 100px;
-      align-items: center;
-      border-bottom: 4px solid #71A5E1;
-  }
-
-  .filebox > p{
-      margin-right: 32px;
-      font-size: 16px;
-      font-weight: 500;
-  }
-  
-  .filebox label {
-    height: 40px;
-    padding: 8px 15px;
-    color: #fff;
-    background-color: #1269CD;
-    cursor: pointer;
-  }
-  
-  /* named upload */
-  .filebox .upload-name {
-    height: 40px;
-    font-size: 16px; 
-    padding: 0 10px;
-    border: 2px solid #71A5E1;
-  }
-
-  form > .text-box{
-      font-size: 16px;
-      color: #333;
-      margin-top: 25px;
-      margin-bottom: 40px;
-  }
-
-#submit-btn{
-    width: 300px;
-    height: 100px;
-    background: #1269CD;
-    color: #fff;
-    font-size: 32px;
-    font-weight: 500;
-    border: none;
-}
-
-#submit-btn:hover{
-    cursor: pointer;
-}
-
-
-
-
-/* 문의내역 확인 */
-
-#contact-3{
-    width: 1440px;
-    margin: 0 auto;
-}
-
-#contact-3 .container{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contact-3 .container > h3{
-    margin-bottom: 20px;
-}
-
-#contact-3 .container > p{
-    font-size: 14px;
-    text-align: center;
-
-}
-
-#contact-3 #login{
-    margin-top: 25px;
-    width: 300px;
-}
-
-#contact-3 label{
+    margin-top: 70px;
     display: none;
 }
 
-#contact-3 form{
+#social .social-box.on {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-#contact-3 .form-group{
-    width: 100%;
-    outline: 1px solid #ccc;
-    margin-bottom: 10px;
-    border-radius: 5px;
+#social .img-box {
+    width: 1200px;
+    height: 600px;
 }
 
-#contact-3 input{
-    width: 100%;
-    display: block;
-    padding: 10px;
-    border-style: none;
+#social .volunteer1 .img-box {
+    background-image: url(../images/social-contents1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#social .volunteer3 .img-box {
+    background-image: url(../images/social-contents3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#social .text-box {
+    width: 1200px;
+    text-align: justify;
+}
+
+#social .text-box > h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#social .text-box > p {
     font-size: 18px;
-    color: #999;
-    padding-left: 25px;
-}
-
-#contact-3 input[type=submit]{
-    background: #1269CD;
-    width: 150px;
-    color: #fff;
-    font-size: 18px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 10px;
-}
-
-#contact-3 input[type=submit]:hover{
-    cursor: pointer;
+    line-height: 30px;
 }
 
 /* 메인 footer */

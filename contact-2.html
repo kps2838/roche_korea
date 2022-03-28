@@ -45,15 +45,15 @@
                         <li><a href="./research.html">연구개발</a></li>
                         <li><a href="./product.html">제품정보</a></li>
                         <li><a href="./hire.html">채용정보</a></li>
-                        <li><a href="#">PR</a></li>
+                        <li><a href="./social.html">PR</a></li>
                     </ul>
                 </li>
                 <li><div class="border"></div>고객문의<img src="./images/down_arrow.svg" alt="더보기">
                     <ul class="depth2">
-                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="./location.html">오시는 길</a></li>
                     </ul></li>
             </ul>
-            <a href="#" class="pc-only"><div class="border"></div>Contact Us<img src="./images/contact.svg" alt="고객센터"></a>
+            <a href="./contact-2.html" class="pc-only"><div class="border"></div>Contact Us<img src="./images/contact.svg" alt="고객센터"></a>
         </div>
     </div>
 
@@ -63,13 +63,13 @@
             <div class="btn">
                 <button class="contact-btn" onclick = "location.href = './contact-1.html'">FAQ</button>
                 <button class="contact-btn this" onclick = "location.href = './contact-2.html'">1:1 문의</button>
-                <button class="contact-btn">문의내역 확인</button>
+                <button class="contact-btn" onclick = "location.href = './contact-3.html'">문의내역 확인</button>
             </div>
             <h3>1:1 문의</h3>
             <p>※ 본 페이지는 한국로슈제약의 문의로 연결되며 로슈진단 (진단기기, 진단시약, 아큐첵 등) 문의는 한국로슈진단(www.roche-diagnostics.co.kr)으로 해주시기 바랍니다.</p>
             <form action="">
-                <div class="agreement">
-                    <h4>개인정보 수집·이용에 관한 사항 (필수)</h4>
+                <fieldset class="agreement">
+                    <legend>개인정보 수집·이용에 관한 사항 (필수)</legend>
                     <p>한국 로슈는 서비스 제공을 위해 귀하의 개인정보를 아래와 같이 수집하고자 합니다.</p>
                     <table>
                         <caption>※ 서비스 제공을 위해 필요한 최소한의 개인정보이므로 동의를 해주셔야 서비스를 이용하실 수 있습니다.</caption>
@@ -89,11 +89,82 @@
                             </td>
                         </tr>
                     </table>
-                    <div class="checkbox">
-                        <span>개인정보의 수집·이용에 관한 사항에 동의합니다</span>
-                        <label for=""><input type="checkbox" name="agreement" id="agreement"></label>
+                    <label for="agreement"><span>개인정보의 수집·이용에 관한 사항에 동의합니다</span><input type="checkbox" name="agreement" id="agreement"></label>
+                </fieldset>
+                <fieldset class="inquiry">
+                    <legend>문의하기</legend>
+                    <div class="container">
+                        <p>고객 구분*</p>
+                        <select for="client" id="client">
+                            <option value="--구분--" selected>- - - 구분 - - -</option>
+                            <option value="환자/보호자">환자/보호자</option>
+                            <option value="의사">의사</option>
+                            <option value="간호사">간호사</option>
+                            <option value="약사">약사</option>
+                            <option value="도매">도매</option>
+                            <option value="기타">기타</option>
+                        </select>
+                        <p>문의 유형*</p>
+                        <select for="category" id="category">
+                            <option value="--유형--" selected>- - - 유형 - - -</option>
+                            <option value="제품관련문의">제품관련문의</option>
+                            <option value="제품 및 서비스 고객제안">제품 및 서비스 고객제안</option>
+                            <option value="불편사항접수">불편사항접수</option>
+                            <option value="IR 관련문의">IR 관련문의</option>
+                            <option value="기타문의">기타문의</option>
+                        </select>
                     </div>
+
+                    <div class="container">
+                        <label for="name">성명* <input type="text" name="name" id="name"></label>
+                        <p>성별*</p>
+                        <select for="gender" id="gender">
+                            <option value="--구분--" selected>- - - 성별 - - -</option>
+                            <option value="환자/보호자">남성</option>
+                            <option value="의사">여성</option>
+                        </select>
+                    </div>
+
+                    <div class="container">
+                        <label for="mail">이메일* <input type="email" name="mail" id="mail"></label>
+                        <label for="phone">전화번호 <input type="tel" name="phone" id="phone" placeholder="숫자만 입력해주세요"></label>
+                    </div>
+
+                    <div class="container">
+                        <p>선호 답변 방법</p>
+                        <label for="response1"><span>이메일</span><input type="checkbox" name="response1" id="response1"></label>
+                        <label for="response2"><span>전화</span><input type="checkbox" name="response2" id="response2"></label>
+                    </div>
+
+                    <div class="container">
+                        <label for="password">비밀번호* <input type="password" name="password" id="password"></label>
+                        <label for="password">비밀번호 확인* <input type="password" name="password" id="password"></label>
+                        <p>비밀번호는 4자이상 연속 되지 않는 숫자 6자로 입력 해주세요.
+                            <br>게시물 등록 후 수정, 삭제 시 비밀번호가 필요합니다.</p>
+                    </div>
+
+                    <div class="container">
+                        <label for="text">문의 내용*</label>
+                        <textarea class="pc-only" name="text" id="text" cols="100" rows="30"></textarea>
+                        <textarea class="mobile-only" name="text" id="text" cols="50" rows="30"></textarea>
+                    </div>
+
+                    <div class="filebox"> 
+                        <p>첨부파일</p>
+                        <label for="file">파일선택</label> 
+                        <input type="file" id="file" style="display: none;"> 
+                        <input class="upload-name">
+                    </div>
+                </fieldset>
+                <div class="text-box">
+                    <p>이 홈페이지는 의사의 진료를 대신하지 않습니다.
+                        <br>로슈는 일반적인 의학 정보나 환자 개인의 질환 상태에 대한 질문에 답변을 드릴 수 없습니다. 
+                        <br>환자 개인의 질환 상태나 이와 관련한 로슈 치료 및 진단 제품에 대한 구체적인 내용은 의사의 상담을 받으시기를 권장해드립니다.
+                        <br>이 웹사이트를 통해 처방 의약품이나 진단 제품을 직접 구매하실 수 없음을 알려드립니다. 기타 다른 질문사항은 관련 부서로 전달 됩니다.
+                        <br>이 웹사이트는 제품 관련 이상사례 보고를 위한 웹사이트가 아니며, 이상사례 보고는 (주)한국로슈 02-3451-3600 으로 연락하여 주시기 바랍니다. 
+                        <br>또한 이상사례는 한국의약품안전관리원(1644-6223)으로도 보고하실 수 있습니다.</p>
                 </div>
+                <button type="submit" id="submit-btn">문의하기</button>
             </form>
         </section>
     </main>
