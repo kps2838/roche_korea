@@ -95,7 +95,7 @@
                     <legend>문의하기</legend>
                     <div class="container">
                         <p>고객 구분*</p>
-                        <select for="client" id="client">
+                        <select name ="client" id="client">
                             <option value="--구분--" selected>- - - 구분 - - -</option>
                             <option value="환자/보호자">환자/보호자</option>
                             <option value="의사">의사</option>
@@ -105,7 +105,7 @@
                             <option value="기타">기타</option>
                         </select>
                         <p>문의 유형*</p>
-                        <select for="category" id="category">
+                        <select name ="category" id="category">
                             <option value="--유형--" selected>- - - 유형 - - -</option>
                             <option value="제품관련문의">제품관련문의</option>
                             <option value="제품 및 서비스 고객제안">제품 및 서비스 고객제안</option>
@@ -118,7 +118,7 @@
                     <div class="container">
                         <label for="name">성명* <input type="text" name="name" id="name"></label>
                         <p>성별*</p>
-                        <select for="gender" id="gender">
+                        <select name ="gender" id="gender">
                             <option value="--구분--" selected>- - - 성별 - - -</option>
                             <option value="환자/보호자">남성</option>
                             <option value="의사">여성</option>
@@ -138,7 +138,7 @@
 
                     <div class="container">
                         <label for="password">비밀번호* <input type="password" name="password" id="password"></label>
-                        <label for="password">비밀번호 확인* <input type="password" name="password" id="password"></label>
+                        <label for="password">비밀번호 확인* <input type="password" name="password"></label>
                         <p>비밀번호는 4자이상 연속 되지 않는 숫자 6자로 입력 해주세요.
                             <br>게시물 등록 후 수정, 삭제 시 비밀번호가 필요합니다.</p>
                     </div>
@@ -146,7 +146,7 @@
                     <div class="container">
                         <label for="text">문의 내용*</label>
                         <textarea class="pc-only" name="text" id="text" cols="100" rows="30"></textarea>
-                        <textarea class="mobile-only" name="text" id="text" cols="50" rows="30"></textarea>
+                        <textarea class="mobile-only" name="text" cols="50" rows="30"></textarea>
                     </div>
 
                     <div class="filebox"> 
